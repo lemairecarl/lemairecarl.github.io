@@ -1,6 +1,7 @@
 ---
 layout: post
-title: L'univers fascinant de l'apprentissage profond
+title: "L'univers fascinant de<br>l'apprentissage profond"
+permalink: /apprentissage-profond/
 excerpt_separator: "<!--more-->"
 ---
 
@@ -43,12 +44,18 @@ Ouf! Toute une aventure! À ce moment, la "compréhension abstraite" accumulée 
 
 Ce qu'il faut garder en tête, c'est qu'en pigeant une classe au hasard, on se tromperait 9 fois sur 10. On réussirait une fois sur dix, par la chance. Puisque le classificateur réussit trois fois sur dix, il est trois fois meilleur! Évidemment, on ne se satisfera pas de cette performance très ordinaire. C'est là que **l'apprentissage profond** entre en jeu!
 
-Avant de passer au prochain sujet, récapitulons. .......
+Avant de passer au prochain sujet, récapitulons. Grâce à l'apprentissage automatique, on peut apprendre à un ordinateur comment deviner le contenu d'une photo. L'ordinateur ne suivra pas une liste d'étapes : il va utiliser une "compréhension abstraite" obtenue par un processus d'apprentissage.
 
-Le succès du ML dépend principalement de deux choses:
+Je vais conclure cette section en avec une touche historique. Étonnamment, beaucoup de connaissances du ML existent depuis les années 80! C'est seulement récemment qu'on en récolte les fruits. Le succès de l'apprentissage automatique dépend principalement de deux choses:
 
-- La quantité de données dont on dispose;
-- La puissance de calcul dont on dispose.
+- La **quantité de données** dont on dispose;
+- La **puissance de calcul** dont on dispose.
+
+À notre époque, ce ne sont pas des ressources qui manquent.
 
 [diff]: https://fr.wikipedia.org/wiki/Différentielle
 [deriv]: https://fr.wikiversity.org/wiki/Fonction_dérivée
+
+## L'apprentissage profond
+
+_À venir..._
