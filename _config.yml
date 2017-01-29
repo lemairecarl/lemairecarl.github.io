@@ -1,1 +1,22 @@
-theme: jekyll-theme-dinky
+# Dependencies
+markdown:         redcarpet
+highlighter:      pygments
+gems: [jekyll-paginate]
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Carl Lemaire
+tagline:          'Apprentissage profond'
+description:      Salut! Je suis étudiant à la maîtrise en apprentissage profond (deep learning) au VITAL de l'UdeS. Je partagerai mes découvertes ici!
+url:              carlvieriste.github.io
+baseurl:          /
+
+author:
+  name:           'Carl Lemaire'
+
+paginate:         5
+
+github:
+#  repo:           https://github.com/poole/hyde
