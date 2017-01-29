@@ -4,7 +4,7 @@
  <title>Carl Lemaire</title>
  <link href="http://localhost:4000/atom.xml" rel="self"/>
  <link href="http://localhost:4000/"/>
- <updated>2017-01-28T21:39:13-05:00</updated>
+ <updated>2017-01-28T21:44:14-05:00</updated>
  <id>http://localhost:4000</id>
  <author>
    <name>Carl Lemaire</name>
@@ -17,7 +17,7 @@
    <link href="http://localhost:4000/2017/01/28/bienvenue/"/>
    <updated>2017-01-28T00:00:00-05:00</updated>
    <id>http://localhost:4000/2017/01/28/bienvenue</id>
-   <content type="html">&lt;p&gt;Il y a trois semaines, j&amp;#39;ai commencé une maîtrise en apprentissage profond appliqué à la vision. J&amp;#39;ai commencé à m&amp;#39;intéresser au &lt;em&gt;&amp;quot;deep learning&amp;quot;&lt;/em&gt; il y a quelques mois. Je trouve ce sujet fascinant! J&amp;#39;ai découvert une quantité de choses qui méritent d&amp;#39;être partagées. Voici donc la raison de la naissance de ce blog.&lt;/p&gt;
+   <content type="html">&lt;p&gt;Il y a trois semaines, j’ai commencé une maîtrise en apprentissage profond appliqué à la vision. J’ai commencé à m’intéresser au &lt;em&gt;“deep learning”&lt;/em&gt; il y a quelques mois. Je trouve ce sujet fascinant! J’ai découvert une quantité de choses qui méritent d’être partagées. Voici donc la raison de la naissance de ce blog.&lt;/p&gt;
 
 &lt;p&gt;À bientôt!&lt;/p&gt;
 </content>
