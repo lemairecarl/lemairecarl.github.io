@@ -53,8 +53,6 @@ html {
  * out above content in mobile and later moves to the side with wider viewports.
  */
 
-@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
-
 .sidebar {
   text-align: center;
   padding: 2rem 1rem;
