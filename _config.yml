@@ -1,4 +1,5 @@
 # Dependencies
+markdown:         kramdown
 highlighter:      rouge
 gems: [jekyll-paginate]
 
@@ -7,15 +8,14 @@ permalink:        pretty
 
 # Setup
 title:            Carl Lemaire
-tagline:          'Apprentissage profond'
+tagline:          Apprentissage profond
 description:      Salut! Je suis étudiant à la maîtrise en apprentissage profond (deep learning) au VITAL de l'UdeS. Je partagerai mes découvertes ici!
 url:              carlvieriste.github.io
 baseurl:          /
-
-author:
-  name:           'Carl Lemaire'
+author:           Carl Lemaire
 
 paginate:         5
+excerpt_separator: "\n\n"
 
 #github:
 #  repo:           https://github.com/carlvieriste
