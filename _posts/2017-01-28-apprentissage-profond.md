@@ -31,6 +31,9 @@ Voyons un usage du ML qui a beaucoup de succès : la reconnaissance d'images. L
 
 Typiquement, lorsqu'on parle de reconnaissance d'images, on parle de classification. D'abord, on fixe un certain nombre de classes, par exemple : chat, chien, auto, avion, camion, etc. Ensuite, on constitue une base de données d'exemples, où on associe des images avec leur classe respective. Enfin, on conçoit l'algorithme d'apprentissage qui va nous permettre d'obtenir une "compréhension intuitive" du problème.
 
+![L'ensemble d'images CIFAR10]({{ site.url }}/assets/cifar10.png)
+*Le célèbre ensemble d'images CIFAR-10. Il contient 10 classes avec 6000 exemples chacune. CIFAR est l'acronyme de Canadian Institute For Advanced Research.*
+
 Grâce à cette "compréhension intuitive", le **classificateur** dira "chat!" en voyant une photo de chat, ou "grenouille!" en voyant une photo de grenouille. Si on ne lui a pas montré d'exemples de cuisinier, il ne sera pas capable de reconnaître cette classe. L'apprentissage se déroule comme suit :
 
 1. On initialise la "compréhension intuitive" (concrètement : un tas de nombres) avec du n'importe quoi. Le classificateur se trompera donc très souvent au départ.
