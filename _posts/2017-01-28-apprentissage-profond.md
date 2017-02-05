@@ -86,6 +86,7 @@ En comparaison, les réseaux de neurones appliqués aux problèmes de vision ont
 Enfin je peux vous dévoiler le sens du terme _apprentissage profond_! En fait, j'aime à penser qu'il s'agit d'une contraction de : **apprentissage automatique par réseau de neurones profond**.
 
 ---
+
 ## Références
 
 [^1]: David A. Drachman. _Do we have brain to spare?_ <http://www.neurology.org/content/64/12/2004> <!-- http:/​/​dx.​doi.​org/​10.​1212/​01.​WNL.​0000166914.​38327.​BB -->
