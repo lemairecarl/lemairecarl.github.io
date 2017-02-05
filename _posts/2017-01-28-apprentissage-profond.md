@@ -66,7 +66,7 @@ M'avez-vous cru? _J'espère que non!_ Je vous menais en bateau...
 
 ### Pas comme notre cerveau
 
-En réalité, bien que les réseaux de neurones tirent certaines inspirations des cerveaux animaux, concrètement, ils en sont très loin! En général, ces réseaux sont une approximation trop grossière du fonctionnement de notre cerveau pour être utiles aux neurosciences.
+En réalité, bien que les réseaux de neurones tirent une certaine inspiration des cerveaux animaux, concrètement, ils en sont très loin! En général, ces réseaux sont une approximation trop grossière du fonctionnement de notre cerveau pour être utiles aux neurosciences.
 
 Les recherches en réseaux de neurones artificiels sont guidées principalement par les mathématiques et l'ingénierie, dans le but de créer des machines qui peuvent atteindre la **généralisation statistique**, en empruntant de temps à autre des intuitions aux sciences cognitives.[^2]
 
@@ -74,16 +74,42 @@ La principale ressemblance entre notre cerveau et les réseaux de neurones artif
 
 En comparaison, les réseaux de neurones appliqués aux problèmes de vision ont un nombre de neurones de l'ordre de dix, voire cent **millions**. Cependant, on peut attaquer bien des problèmes avec beaucoup moins de neurones.
 
-![]({{ site.url }}/assets/neurones.jpg)
-*Des neurones biologiques --- et sans gluten! Source : brainmaps.org*
+![Des neurones biologiques]({{ site.url }}/assets/neurones.jpg)
+*Des neurones biologiques --- et sans gluten!    Source : brainmaps.org*
 
 ### Des moyennes pondérées
 
-![Réseau de neurones à une couche.]({{ site.url }}/assets/schema_reseau_lineaire.png)
+Le fonctionnement d'un neurone artificiel est semblable à celui d'une moyenne pondérée. Dans l'illustration suivante, on voit la couche d'entrée (composée des pixels de l'image), et la couche de sortie (un score pour chaque classe). Remarquez qu'un pixel est connecté à chaque classe, et qu'une classe est connectée à chaque pixel.
+
+![Réseau de neurones à une couche]({{ site.url }}/assets/schema_reseau_lineaire.png)
+*Chaque neurone "de sortie" fait une moyenne pondérée des neurones "d'entrée". On utilise en réalité au moins 1024 pixels pour une image, et 3 neurones par pixel (un pour chaque [composante RVB](https://fr.wikipedia.org/wiki/Rouge_vert_bleu)).*
+
+Chacune des connexions entre deux neurones a un **poids**, c'est-à-dire que le pixel 1 n'aura pas la même utilité que le pixel 2 pour déterminer si l'image contient un cheval. De même, le pixel 1 n'aura pas la même utilité pour déterminer si l'image contient un cheval que pour déterminer si elle contient un chien.
+
+Les poids de ces connexions sont en fait la fameuse "compréhension intuitive" dont je vous parlais à la section précédente ! Ce sont ces poids que l'on obtient par le processus d'apprentissage. Notez que la présence ou l'absence de connexion n'est pas quelque chose qui est appris. Dans le cas présent, on parle d'une connectivité **dense** entre les couches (il y a des connexions partout).
+
+Il existe une multitude de façons de _jazzer_ nos réseaux de neurones ! La méthode la plus importante est d'**ajouter des couches** de neurones entre la couche d'entrée et celle de sortie. On obtiendra alors un réseau de neurones profond.
+
+Voici enfin arrivés à la section que vous attendiez tous !
 
 ## L'apprentissage profond
 
-Enfin je peux vous dévoiler le sens du terme _apprentissage profond_! En fait, j'aime à penser qu'il s'agit d'une contraction de : **apprentissage automatique par réseau de neurones profond**.
+Je peux maintenant vous dévoiler le sens du terme _apprentissage profond_! En fait, j'aime à penser qu'il s'agit d'une contraction de : **apprentissage automatique par réseau de neurones profond**.
+
+Les couches de neurones qui se trouvent entre la couche d'entrée et celle de sortie s'appellent des **couches cachées**. À peu de choses près, les neurones cachés sont pareils aux neurones de sortie. Eux aussi, ils vont apprendre à reconnaître des classes. Cependant, ce seront des classes abstraites, comme par exemple : _"oreilles pointues"_ ou _"sabots"_.[^3]
+
+![Réseau de neurones comprenant une couche cachée]({{ site.url }}/assets/multicouche.png)
+*Réseau de neurones comprenant une couche cachée.*
+
+Les neurones de la couche suivante vont donc pouvoir bénéficier d'informations beaucoup plus utiles ! Par exemple, le neurone associé à la classe "chat" va donner un poids très élevé au neurone "oreilles pointues". La couche de sortie pourra alors faire un bien meilleur travail que lorsqu'elle ne connaissait que la couleur des pixels dans l'image.
+
+Comment choisit-on quelles caractéristiques vont être reconnues par la couche cachée ? Réponse : on ne le choisit pas. À vrai dire, on ne sait pas ce qui se passe dans cette couche, et on n'a pas besoin de le savoir. C'est le processus d'apprentissage qui va "faire ce choix".
+
+Bref, vous savez maintenant ce qu'est l'apprentissage profond. Mon approche a été d'introduire les concepts sur lesquels se base l'apprentissage profond afin de démystifier le terme. D'abord, nous avons vu que l'**apprentissage** automatique est une méthode d'intelligence artificielle qui "apprend par l'exemple". Ensuite, nous avons vu que les réseaux de neurones **profonds** sont des réseaux de neurones qui comprennent des couches cachées.
+
+J'espère que vous avez apprécié cette lecture ! Si vous avez des questions, des commentaires ou des suggestions, n'hésitez pas à me le dire par le biais de la section _commentaires_ ci-bas.
+
+À la prochaine !
 
 ---
 
@@ -91,3 +117,4 @@ Enfin je peux vous dévoiler le sens du terme _apprentissage profond_! En fait, 
 
 [^1]: David A. Drachman. _Do we have brain to spare?_ <http://www.neurology.org/content/64/12/2004> <!-- http:/​/​dx.​doi.​org/​10.​1212/​01.​WNL.​0000166914.​38327.​BB -->
 [^2]: Goodfellow, Bengio, Courville. _Deep Learning_, p.169. <http://www.deeplearningbook.org> "[...] modern neural network research is guided by many mathematical and engineering disciplines, and the goal of neural networks is not to perfectly model the brain. It is best to think of feedforward networks as function approximation machines that are designed to achieve statistical generalization, occasionally drawing some insights from what we know about the brain, rather than as models of brain function."
+[^3]: J'ai pris un raccourci pour simplifier l'explication. En réalité, pour détecter des caractéristiques visuelles du genre "oreille" ou "sabot", qui peuvent se trouver à n'importe quel endroit dans l'image, il faut utiliser un réseau de neurones **à convolution**. J'en parlerai dans un prochain article.
