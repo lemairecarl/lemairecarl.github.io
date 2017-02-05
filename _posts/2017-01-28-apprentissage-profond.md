@@ -5,6 +5,11 @@ permalink: /apprentissage-profond/
 excerpt_separator: "<!--more-->"
 ---
 
+<!-- Inclure jQuery et KaTeX -->
+
+<script src="{{ site.url }}/public/jquery-3.1.1.min.js"></script>
+<script src="{{ site.url }}/public/katex.min.js" integrity="sha384-/y1Nn9+QQAipbNQWU65krzJralCnuOasHncUFXGkdwntGeSvQicrYkiUBwsgUqc1"></script>
+
 Il y a trois semaines, j'ai commencé une maîtrise en apprentissage profond appliqué à la vision. J'ai commencé à m'intéresser au _"deep learning"_ il y a quelques mois. Je trouve ce sujet fascinant! J'ai découvert une quantité de choses qui méritent d'être partagées. Voici donc la raison de la naissance de ce blog.
 
 Comment un ordinateur peut-il _apprendre_ ? En quoi l'apprentissage profond est-il _profond_ ? Avant de pouvoir répondre à ces questions qui vous réveillent la nuit, il faut d'abord dévoiler quelques concepts importants : **intelligence artificielle**, **apprentissage automatique**, et **réseaux de neurones artificiels**.
@@ -124,3 +129,16 @@ J'espère que vous avez apprécié cette lecture ! Si vous avez des questions, 
 [^1]: David A. Drachman. _Do we have brain to spare?_ <http://www.neurology.org/content/64/12/2004> <!-- http:/​/​dx.​doi.​org/​10.​1212/​01.​WNL.​0000166914.​38327.​BB -->
 [^2]: Goodfellow, Bengio, Courville. _Deep Learning_, p.169. <http://www.deeplearningbook.org> "[...] modern neural network research is guided by many mathematical and engineering disciplines, and the goal of neural networks is not to perfectly model the brain. It is best to think of feedforward networks as function approximation machines that are designed to achieve statistical generalization, occasionally drawing some insights from what we know about the brain, rather than as models of brain function."
 [^3]: J'ai pris un raccourci pour simplifier l'explication. En réalité, pour détecter des caractéristiques visuelles du genre "oreille" ou "sabot", qui peuvent se trouver à n'importe quel endroit dans l'image, il faut utiliser un réseau de neurones **à convolution**. J'en parlerai dans un prochain article.
+
+<!-- Exécuter KaTeX -->
+<script>
+  $("script[type='math/tex']").replaceWith(function() {
+      var tex = $(this).text();
+      return katex.renderToString(tex, {displayMode: false});
+  });
+
+  $("script[type='math/tex; mode=display']").replaceWith(function() {
+      var tex = $(this).html();
+      return katex.renderToString(tex.replace(/%.*/g, ''), {displayMode: true});
+  });
+</script>
