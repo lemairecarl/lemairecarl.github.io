@@ -43,7 +43,7 @@ Grâce à cette "compréhension intuitive", le **classificateur** dira "chat!" e
 
 1. On initialise la "compréhension intuitive" (concrètement : un tas de nombres) avec du n'importe quoi. Le classificateur se trompera donc très souvent au départ.
 2. Le classificateur prend une image et tente de déterminer sa classe.
-3. Le classificateur donne une probabilité $$ p $$ pour chaque classe. S'il voit une photo de chat, il va éventuellement donner quelque chose dans ce genre :
+3. Le classificateur donne une probabilité $$ p $$ pour chaque classe. Éventuellement, s'il voit une photo de chat, il va donner quelque chose dans ce genre :
 
    $$ p_{chat} = \bold{60\%},\enspace p_{chien} = 35\%,\enspace p_{cheval} = 5\% $$.
 
