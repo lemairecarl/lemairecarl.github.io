@@ -5,13 +5,6 @@ permalink: /apprentissage-profond/
 excerpt_separator: "<!--more-->"
 ---
 
-# TODO
-
-- changer "compréhension intuitive" pour "intuition" ?
-	- trouver des termes pour "les poids" et "l'inférence"
-- enlever explication carlvieriste
-- titre tab br
-
 Il y a trois semaines, j'ai commencé une maîtrise en apprentissage profond appliqué à la vision. J'ai commencé à m'intéresser au _"deep learning"_ il y a quelques mois. Je trouve ce sujet fascinant! J'ai découvert une quantité de choses qui méritent d'être partagées. Voici donc la raison de la naissance de ce blog.
 
 Comment un ordinateur peut-il _apprendre_ ? En quoi l'apprentissage profond est-il _profond_ ? Avant de pouvoir répondre à ces questions qui vous réveillent la nuit, il faut d'abord dévoiler quelques concepts importants : **intelligence artificielle**, **apprentissage automatique**, et **réseaux de neurones artificiels**.
