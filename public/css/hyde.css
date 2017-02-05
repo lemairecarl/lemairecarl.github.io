@@ -20,6 +20,8 @@
  * Global resets
  * Sidebar
  * Container
+ * Footnotes
+ * Image captions
  * Reverse layout
  * Themes
  */
@@ -83,6 +85,7 @@ html {
   font-size: 3.25rem;
   line-height: 0.9em;
   margin-bottom: 1rem;
+  font-weight: normal;
 }
 
 /* Sidebar nav */
@@ -141,6 +144,26 @@ a.sidebar-nav-item:focus {
     margin-left: 22rem;
     margin-right: 4rem;
   }
+}
+
+
+/* Footnotes
+ */
+
+.footnotes {
+  font-size: 0.8rem;
+}
+
+
+/* Image captions
+ */
+
+img + em {
+  position: relative;
+  top: -15px;
+  font-size: 0.8rem;
+  line-height: 1rem;
+  display: block;
 }
 
 

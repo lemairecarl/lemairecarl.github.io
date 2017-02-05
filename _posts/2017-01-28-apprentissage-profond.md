@@ -1,13 +1,20 @@
 ---
 layout: post
-title: "L'univers fascinant de<br>l'apprentissage profond"
+title: "L'univers fascinant de l'apprentissage profond"
 permalink: /apprentissage-profond/
 excerpt_separator: "<!--more-->"
 ---
 
+# TODO
+
+- changer "compréhension intuitive" pour "intuition" ?
+	- trouver des termes pour "les poids" et "l'inférence"
+- enlever explication carlvieriste
+- titre tab br
+
 Il y a trois semaines, j'ai commencé une maîtrise en apprentissage profond appliqué à la vision. J'ai commencé à m'intéresser au _"deep learning"_ il y a quelques mois. Je trouve ce sujet fascinant! J'ai découvert une quantité de choses qui méritent d'être partagées. Voici donc la raison de la naissance de ce blog.
 
-En quoi l'apprentissage profond est-il _profond_? Avant de pouvoir répondre à cette question qui vous réveille la nuit, il faut d'abord dévoiler quelques concepts importants : **intelligence artificielle**, **apprentissage automatique**, et **réseaux de neurones artificiels**.
+Comment un ordinateur peut-il _apprendre_ ? En quoi l'apprentissage profond est-il _profond_ ? Avant de pouvoir répondre à ces questions qui vous réveillent la nuit, il faut d'abord dévoiler quelques concepts importants : **intelligence artificielle**, **apprentissage automatique**, et **réseaux de neurones artificiels**.
 
 <!--more-->
 
@@ -29,33 +36,64 @@ Voyons un usage du ML qui a beaucoup de succès : la reconnaissance d'images. L
 
 ### La classification
 
-Typiquement, lorsqu'on parle de reconnaissance d'images, on parle de classification. D'abord, on fixe un certain nombre de classes, par exemple : chat, chien, auto, avion, camion, etc. Ensuite, on constitue une base de données d'exemples, où on associe des images avec leur classe respective. Enfin, on conçoit l'algorithme d'apprentissage qui va nous permettre d'obtenir une "compréhension abstraite" du problème.
+Typiquement, lorsqu'on parle de reconnaissance d'images, on parle de classification. D'abord, on fixe un certain nombre de classes, par exemple : chat, chien, auto, avion, camion, etc. Ensuite, on constitue une base de données d'exemples, où on associe des images avec leur classe respective. Enfin, on conçoit l'algorithme d'apprentissage qui va nous permettre d'obtenir une "compréhension intuitive" du problème.
 
-Grâce à cette "compréhension abstraite", le **classificateur** dira "chat!" en voyant une photo de chat, ou "grenouille!" en voyant une photo de grenouille. Si on ne lui a pas montré d'exemples de cuisinier, il ne sera pas capable de reconnaître cette classe. L'apprentissage se déroule comme suit :
+Grâce à cette "compréhension intuitive", le **classificateur** dira "chat!" en voyant une photo de chat, ou "grenouille!" en voyant une photo de grenouille. Si on ne lui a pas montré d'exemples de cuisinier, il ne sera pas capable de reconnaître cette classe. L'apprentissage se déroule comme suit :
 
-1. On initialise la "compréhension abstraite" (concrètement : un tas de nombres) avec du n'importe quoi. Le classificateur se trompera donc très souvent au départ.
+1. On initialise la "compréhension intuitive" (concrètement : un tas de nombres) avec du n'importe quoi. Le classificateur se trompera donc très souvent au départ.
 2. Le classificateur prend une image et tente de déterminer sa classe.
-3. Le classificateur donne une probabilité pour chaque classe. S'il voit une photo de chat, il va éventuellement donner quelque chose dans ce genre : `chat = 60%, chien = 35%, cheval = 5%`. Cependant, au début de l'apprentissage, ça risque plutôt de ressembler à ceci : `chat = 1%, chien = 4%, cheval = 95%` (n'importe quoi!).
-4. On calcule la _perte_, un nombre qui indique à quel point le classificateur se trompe. La magie du [mathématiques][diff] nous permet d'obtenir la [dérivée][deriv] de la _perte_.
-5. Grâce à la dérivée de la _perte_, on sait exactement comment modifier la "compréhension abstraite" afin que le classificateur ait appris de son erreur.
+3. Le classificateur donne une probabilité pour chaque classe. S'il voit une photo de chat, il va éventuellement donner quelque chose dans ce genre : `chat = 60%, chien = 35%, cheval = 5%`. Cependant, au début de l'apprentissage, ça risque plutôt de ressembler à ceci : `chat = 3%, chien = 2%, cheval = 95%` (n'importe quoi!).
+4. On calcule la _perte_, un nombre qui indique à quel point le classificateur se trompe. La magie des [mathématiques][diff] nous permet d'obtenir la [dérivée][deriv] de la _perte_.
+5. Grâce à la dérivée de la _perte_, on sait exactement comment modifier la "compréhension intuitive" afin que le classificateur ait appris de son erreur.
 6. On retourne à l'étape 2 et on continue jusqu'à avoir vu tous les exemples (idéalement plusieurs fois).
 
-Ouf! Toute une aventure! À ce moment, la "compréhension abstraite" accumulée permet au classificateur de deviner le contenu d'une image sans trop se tromper. En fait, pour 10 classes, il se trompera environ  7 fois sur 10. **"Quoi??? C'est pathétique!"** me direz-vous. Vous avez raison, mais...
+Ouf! Toute une aventure! À ce moment, la "compréhension intuitive" accumulée permet au classificateur de deviner le contenu d'une image sans trop se tromper. En fait, pour 10 classes, il se trompera environ  7 fois sur 10. **"Quoi??? C'est pathétique!"** me direz-vous. Vous avez raison, mais...
 
 Ce qu'il faut garder en tête, c'est qu'en pigeant une classe au hasard, on se tromperait 9 fois sur 10. On réussirait une fois sur dix, par la chance. Puisque le classificateur réussit trois fois sur dix, il est trois fois meilleur! Évidemment, on ne se satisfera pas de cette performance très ordinaire. C'est là que **l'apprentissage profond** entre en jeu!
 
-Avant de passer au prochain sujet, récapitulons. Grâce à l'apprentissage automatique, on peut apprendre à un ordinateur comment deviner le contenu d'une photo. L'ordinateur ne suivra pas une liste d'étapes : il va utiliser une "compréhension abstraite" obtenue par un processus d'apprentissage.
+Avant de passer au prochain sujet, récapitulons. Grâce à l'apprentissage automatique, on peut apprendre à un ordinateur comment deviner le contenu d'une photo. L'ordinateur ne suivra pas une liste d'étapes : il va utiliser une "compréhension intuitive" obtenue par un processus d'apprentissage.
 
 Je vais conclure cette section en avec une touche historique. Étonnamment, beaucoup de connaissances du ML existent depuis les années 80! C'est seulement récemment qu'on en récolte les fruits. Le succès de l'apprentissage automatique dépend principalement de deux choses:
 
 - La **quantité de données** dont on dispose;
 - La **puissance de calcul** dont on dispose.
 
-À notre époque, ce ne sont pas des ressources qui manquent.
+À notre époque, ce ne sont pas ces ressources qui manquent.
 
 [diff]: https://fr.wikipedia.org/wiki/Différentielle
 [deriv]: https://fr.wikiversity.org/wiki/Fonction_dérivée
 
+## Les réseaux de neurones
+
+Les réseaux de neurones sont une des nombreuses techniques d'apprentissage automatique. Il s'agit de la technique qui a eu le plus de succès à ce jour. Je vais maintenant vous expliquer comment cette technique fonctionne.
+
+Vous êtes-vous déjà demandé ce qui se passe avec tous les cerveaux de bétail qui ne sont pas mangés? On les amène dans de grandes installations souterraines et [on y plante des électrodes afin de les utiliser pour faire des calculs](/rickroll/).
+
+M'avez-vous cru? _J'espère que non!_ Je vous menais en bateau...
+
+### Pas comme notre cerveau
+
+En réalité, bien que les réseaux de neurones tirent certaines inspirations des cerveaux animaux, concrètement, ils en sont très loin! En général, ces réseaux sont une approximation trop grossière du fonctionnement de notre cerveau pour être utiles aux neurosciences.
+
+Les recherches en réseaux de neurones artificiels sont guidées principalement par les mathématiques et l'ingénierie, dans le but de créer des machines qui peuvent atteindre la **généralisation statistique**, en empruntant de temps à autre des intuitions aux sciences cognitives.[^2]
+
+La principale ressemblance entre notre cerveau et les réseaux de neurones artificiels est l’inter-connectivité des neurones. Notre cerveau contient cent **milliards** de neurones, chacune ayant en moyenne 7 000 connexions avec d'autres neurones.[^1]
+
+En comparaison, les réseaux de neurones appliqués aux problèmes de vision ont un nombre de neurones de l'ordre de dix, voire cent **millions**. Cependant, on peut attaquer bien des problèmes avec beaucoup moins de neurones.
+
+![]({{ site.url }}/assets/neurones.jpg)
+*Des neurones biologiques --- et sans gluten! Source : brainmaps.org*
+
+### Des moyennes pondérées
+
+![Réseau de neurones à une couche.]({{ site.url }}/assets/schema_reseau_lineaire.png)
+
 ## L'apprentissage profond
 
-_À venir..._
+Enfin je peux vous dévoiler le sens du terme _apprentissage profond_! En fait, j'aime à penser qu'il s'agit d'une contraction de : **apprentissage automatique par réseau de neurones profond**.
+
+---
+## Références
+
+[^1]: David A. Drachman. _Do we have brain to spare?_ <http://www.neurology.org/content/64/12/2004> <!-- http:/​/​dx.​doi.​org/​10.​1212/​01.​WNL.​0000166914.​38327.​BB -->
+[^2]: Goodfellow, Bengio, Courville. _Deep Learning_, p.169. <http://www.deeplearningbook.org> "[...] modern neural network research is guided by many mathematical and engineering disciplines, and the goal of neural networks is not to perfectly model the brain. It is best to think of feedforward networks as function approximation machines that are designed to achieve statistical generalization, occasionally drawing some insights from what we know about the brain, rather than as models of brain function."
