@@ -75,7 +75,7 @@ La principale ressemblance entre notre cerveau et les réseaux de neurones artif
 En comparaison, les réseaux de neurones appliqués aux problèmes de vision ont un nombre de neurones de l'ordre de dix, voire cent **millions**. Cependant, on peut attaquer bien des problèmes avec beaucoup moins de neurones.
 
 ![Des neurones biologiques]({{ site.url }}/assets/neurones.jpg)
-*Des neurones biologiques --- et sans gluten!    Source : brainmaps.org*
+*Des neurones biologiques --- et sans gluten!    Source : brainmaps.org*
 
 ### Des moyennes pondérées
 
@@ -93,7 +93,7 @@ Les poids de ces connexions sont en fait la fameuse "compréhension intuitive" d
 
 Il existe une multitude de façons de _jazzer_ nos réseaux de neurones ! La méthode la plus importante est d'**ajouter des couches** de neurones entre la couche d'entrée et celle de sortie. On obtiendra alors un réseau de neurones profond.
 
-Voici enfin arrivés à la section que vous attendiez tous !
+Nous voici enfin arrivés à la section que vous attendiez tous !
 
 ## L'apprentissage profond
 
