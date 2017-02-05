@@ -139,13 +139,21 @@ a.sidebar-nav-item:focus {
   }
 }
 
+@media (min-width: 58em) {
+  .katex {
+    font-size: 1rem !important;
+  }
+}
+
 @media (min-width: 64em) {
   .content {
     margin-left: 22rem;
     margin-right: 4rem;
   }
+  .katex {
+    font-size: 1.2rem !important;
+  }
 }
-
 
 /* Footnotes
  */

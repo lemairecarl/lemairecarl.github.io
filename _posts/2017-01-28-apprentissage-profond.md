@@ -43,7 +43,15 @@ Grâce à cette "compréhension intuitive", le **classificateur** dira "chat!" e
 
 1. On initialise la "compréhension intuitive" (concrètement : un tas de nombres) avec du n'importe quoi. Le classificateur se trompera donc très souvent au départ.
 2. Le classificateur prend une image et tente de déterminer sa classe.
-3. Le classificateur donne une probabilité pour chaque classe. S'il voit une photo de chat, il va éventuellement donner quelque chose dans ce genre : `chat = 60%, chien = 35%, cheval = 5%`. Cependant, au début de l'apprentissage, ça risque plutôt de ressembler à ceci : `chat = 3%, chien = 2%, cheval = 95%` (n'importe quoi!).
+3. Le classificateur donne une probabilité $$ p $$ pour chaque classe. S'il voit une photo de chat, il va éventuellement donner quelque chose dans ce genre :
+
+   $$ p_{chat} = \bold{60\%},\enspace p_{chien} = 35\%,\enspace p_{cheval} = 5\% $$.
+
+   Cependant, au début de l'apprentissage, il risque plutôt de sortir quelque chose comme :
+
+   $$ p_{chat} = \bold{3\%},\enspace p_{chien} = 2\%,\enspace p_{cheval} = 95\% $$.
+
+   Bref, n'importe quoi !
 4. On calcule la _perte_, un nombre qui indique à quel point le classificateur se trompe. La magie des [mathématiques][diff] nous permet d'obtenir la [dérivée][deriv] de la _perte_.
 5. Grâce à la dérivée de la _perte_, on sait exactement comment modifier la "compréhension intuitive" afin que le classificateur ait appris de son erreur.
 6. On retourne à l'étape 2 et on continue jusqu'à avoir vu tous les exemples (idéalement plusieurs fois).
@@ -94,8 +102,11 @@ Le fonctionnement d'un neurone artificiel est semblable à celui d'une moyenne p
 
 Chacune des connexions entre deux neurones a un **poids**, c'est-à-dire que le pixel 1 n'aura pas la même utilité que le pixel 2 pour déterminer si l'image contient un cheval. De même, le pixel 1 n'aura pas la même utilité pour déterminer si l'image contient un cheval que pour déterminer si elle contient un chien.
 
-Le score associé à la classe "chat" sera donc : `score_chat = (p1 × w1) + (p2 × w2) + (p3 × w3) + (p4 × w4)`,  
-où `p1` est la valeur du pixel 1 et `w1` est le poids du pixel 1 pour la classe "chat". Cette opération est une moyenne pondérée (sans la division habituelle).
+Le score associé à la classe "chat" sera donc :
+
+$$ s_{chat} = (x_1 \times w_1)+(x_2 \times w_2)+(x_3 \times w_3)+(x_4 \times w_4) $$
+
+où $$ x_1 $$ est la valeur du pixel 1 et $$ w_1 $$ est le poids du pixel 1 pour la classe "chat". Cette opération est une moyenne pondérée (sans la division habituelle).
 
 Les poids de ces connexions sont en fait la fameuse "compréhension intuitive" dont je vous parlais à la section précédente ! Ce sont ces poids que l'on obtient par le processus d'apprentissage. Notez que la présence ou l'absence de connexion n'est pas quelque chose qui est appris. Dans le cas présent, on parle d'une connectivité **dense** entre les couches (il y a des connexions partout).
 
