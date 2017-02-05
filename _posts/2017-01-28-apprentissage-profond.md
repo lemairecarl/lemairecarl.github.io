@@ -86,6 +86,9 @@ Le fonctionnement d'un neurone artificiel est semblable à celui d'une moyenne p
 
 Chacune des connexions entre deux neurones a un **poids**, c'est-à-dire que le pixel 1 n'aura pas la même utilité que le pixel 2 pour déterminer si l'image contient un cheval. De même, le pixel 1 n'aura pas la même utilité pour déterminer si l'image contient un cheval que pour déterminer si elle contient un chien.
 
+Le score associé à la classe "chat" sera donc : `score_chat = (p1 × w1) + (p2 × w2) + (p3 × w3) + (p4 × w4)`,  
+où `p1` est la valeur du pixel 1 et `w1` est le poids du pixel 1 pour la classe "chat". Cette opération est une moyenne pondérée (sans la division habituelle).
+
 Les poids de ces connexions sont en fait la fameuse "compréhension intuitive" dont je vous parlais à la section précédente ! Ce sont ces poids que l'on obtient par le processus d'apprentissage. Notez que la présence ou l'absence de connexion n'est pas quelque chose qui est appris. Dans le cas présent, on parle d'une connectivité **dense** entre les couches (il y a des connexions partout).
 
 Il existe une multitude de façons de _jazzer_ nos réseaux de neurones ! La méthode la plus importante est d'**ajouter des couches** de neurones entre la couche d'entrée et celle de sortie. On obtiendra alors un réseau de neurones profond.
