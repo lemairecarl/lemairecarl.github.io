@@ -57,10 +57,14 @@ html {
 
 .sidebar {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   color: rgba(255,255,255,.5);
   background-color: #202020;
 }
+.sidebar .lead {
+  font-size: 0.7rem;
+}
+
 @media (min-width: 48em) {
   .sidebar {
     position: fixed;
@@ -68,7 +72,11 @@ html {
     left: 0;
     bottom: 0;
     width: 18rem;
+    padding: 2rem 1rem;
     text-align: left;
+  }
+  .sidebar .lead {
+    font-size: 1rem;
   }
 }
 
@@ -89,9 +97,6 @@ html {
 }
 
 /* Sidebar nav */
-.sidebar-nav {
-  margin-bottom: 1rem;
-}
 .sidebar-nav-item {
   display: block;
   line-height: 1.75;
@@ -127,15 +132,16 @@ a.sidebar-nav-item:focus {
  */
 
 .content {
-  padding-top:    4rem;
+  padding-top:    2rem;
   padding-bottom: 4rem;
 }
 
 @media (min-width: 48em) {
   .content {
-    max-width: 38rem;
-    margin-left: 20rem;
+    max-width:    38rem;
+    margin-left:  20rem;
     margin-right: 2rem;
+    padding-top:  4rem;
   }
 }
 
