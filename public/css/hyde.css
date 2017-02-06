@@ -62,7 +62,7 @@ html {
   background-color: #202020;
 }
 .sidebar .lead {
-  font-size: 0.7rem;
+  display: none;
 }
 
 @media (min-width: 48em) {
@@ -76,7 +76,7 @@ html {
     text-align: left;
   }
   .sidebar .lead {
-    font-size: 1rem;
+    display: block;
   }
 }
 
