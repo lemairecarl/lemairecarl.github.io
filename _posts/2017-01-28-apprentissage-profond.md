@@ -62,7 +62,7 @@ Ce qu'il faut garder en tête, c'est qu'en pigeant une classe au hasard, on se t
 
 Avant de passer au prochain sujet, récapitulons. Grâce à l'apprentissage automatique, on peut apprendre à un ordinateur comment deviner le contenu d'une photo. L'ordinateur ne suivra pas une liste d'étapes : il va utiliser une "compréhension intuitive" obtenue par un processus d'apprentissage.
 
-Je vais conclure cette section en avec une touche historique. Étonnamment, beaucoup de connaissances du ML existent depuis les années 80! C'est seulement récemment qu'on en récolte les fruits. Le succès de l'apprentissage automatique dépend principalement de deux choses:
+Je vais conclure cette section avec une touche historique. Étonnamment, beaucoup de connaissances du ML existent depuis les années 80! C'est seulement récemment qu'on en récolte les fruits. Le succès de l'apprentissage automatique dépend principalement de deux choses:
 
 - La **quantité de données** dont on dispose;
 - La **puissance de calcul** dont on dispose.
@@ -106,11 +106,11 @@ Le score associé à la classe "chat" sera donc :
 
 $$ s_{chat} = (x_1 \times w_1)+(x_2 \times w_2)+(x_3 \times w_3)+(x_4 \times w_4) $$
 
-où $$ x_1 $$ est la valeur du pixel 1 et $$ w_1 $$ est le poids du pixel 1 pour la classe "chat". Cette opération est une moyenne pondérée (sans la division habituelle).
+où $$ x_1 $$ est la valeur du pixel 1 et $$ w_1 $$ est le poids du pixel 1 pour la classe "chat". Cette opération est une moyenne pondérée (sans la division habituelle).[^4]
 
 Les poids de ces connexions sont en fait la fameuse "compréhension intuitive" dont je vous parlais à la section précédente ! Ce sont ces poids que l'on obtient par le processus d'apprentissage. Notez que la présence ou l'absence de connexion n'est pas quelque chose qui est appris. Dans le cas présent, on parle d'une connectivité **dense** entre les couches (il y a des connexions partout).
 
-Il existe une multitude de façons de _jazzer_ nos réseaux de neurones ! La méthode la plus importante est d'**ajouter des couches** de neurones entre la couche d'entrée et celle de sortie. On obtiendra alors un réseau de neurones profond.
+Il existe une multitude de façons de _booster_ nos réseaux de neurones ! La méthode la plus importante est d'**ajouter des couches** de neurones entre la couche d'entrée et celle de sortie. On obtiendra alors un réseau de neurones profond.
 
 Nous voici enfin arrivés à la section que vous attendiez tous !
 
@@ -135,11 +135,12 @@ J'espère que vous avez apprécié cette lecture ! Si vous avez des questions, 
 
 ---
 
-## Références
+## Notes et références
 
 [^1]: David A. Drachman. _Do we have brain to spare?_ <http://www.neurology.org/content/64/12/2004> <!-- http:/​/​dx.​doi.​org/​10.​1212/​01.​WNL.​0000166914.​38327.​BB -->
 [^2]: Goodfellow, Bengio, Courville. _Deep Learning_, p.169. <http://www.deeplearningbook.org> "[...] modern neural network research is guided by many mathematical and engineering disciplines, and the goal of neural networks is not to perfectly model the brain. It is best to think of feedforward networks as function approximation machines that are designed to achieve statistical generalization, occasionally drawing some insights from what we know about the brain, rather than as models of brain function."
 [^3]: J'ai pris un raccourci pour simplifier l'explication. En réalité, pour détecter des caractéristiques visuelles du genre "oreille" ou "sabot", qui peuvent se trouver à n'importe quel endroit dans l'image, il faut utiliser un réseau de neurones **à convolution**. J'en parlerai dans un prochain article.
+[^4]: En réalité, il s'agit d'une _somme pondérée_. J'utilise le terme _moyenne pondérée_ car j'ai l'impression qu'il est mieux connu en dehors des milieux mathématiques. Cette opération est aussi le **produit scalaire** entre le vecteur des pixels et le vecteur des poids.
 
 <!-- Exécuter KaTeX -->
 <script>
