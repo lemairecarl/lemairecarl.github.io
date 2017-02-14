@@ -39,11 +39,11 @@ Typiquement, lorsqu'on parle de reconnaissance d'images, on parle de classificat
 ![L'ensemble d'images CIFAR10]({{ site.url }}/assets/cifar10.png)
 *Le célèbre ensemble d'images CIFAR-10. Il contient 10 classes avec 6000 exemples chacune. CIFAR est l'acronyme de Canadian Institute For Advanced Research.*
 
-Grâce à cette "compréhension intuitive", le **classificateur** dira "chat!" en voyant une photo de chat, ou "grenouille!" en voyant une photo de grenouille. Si on ne lui a pas montré d'exemples de cuisinier, il ne sera pas capable de reconnaître cette classe. L'apprentissage se déroule comme suit :
+Grâce à cette "compréhension intuitive", le **classifieur** dira "chat!" en voyant une photo de chat, ou "grenouille!" en voyant une photo de grenouille. Si on ne lui a pas montré d'exemples de cuisinier, il ne sera pas capable de reconnaître cette classe. L'apprentissage se déroule comme suit :
 
-1. On initialise la "compréhension intuitive" (concrètement : un tas de nombres) avec du n'importe quoi. Le classificateur se trompera donc très souvent au départ.
-2. Le classificateur prend une image et tente de déterminer sa classe.
-3. Le classificateur donne une probabilité $$ p $$ pour chaque classe. Éventuellement, s'il voit une photo de chat, il va donner quelque chose dans ce genre :
+1. On initialise la "compréhension intuitive" (concrètement : un tas de nombres) avec du n'importe quoi. Le classifieur se trompera donc très souvent au départ.
+2. Le classifieur prend une image et tente de déterminer sa classe.
+3. Le classifieur donne une probabilité $$ p $$ pour chaque classe. Éventuellement, s'il voit une photo de chat, il va donner quelque chose dans ce genre :
 
    $$ p_{chat} = \bold{60\%},\enspace p_{chien} = 35\%,\enspace p_{cheval} = 5\% $$.
 
@@ -52,13 +52,13 @@ Grâce à cette "compréhension intuitive", le **classificateur** dira "chat!" e
    $$ p_{chat} = \bold{3\%},\enspace p_{chien} = 2\%,\enspace p_{cheval} = 95\% $$.
 
    Bref, n'importe quoi !
-4. On calcule la _perte_, un nombre qui indique à quel point le classificateur se trompe. La magie des [mathématiques][diff] nous permet d'obtenir la [dérivée][deriv] de la _perte_.
-5. Grâce à la dérivée de la _perte_, on sait exactement comment modifier la "compréhension intuitive" afin que le classificateur ait appris de son erreur.
+4. On calcule la _perte_, un nombre qui indique à quel point le classifieur se trompe. La magie des [mathématiques][diff] nous permet d'obtenir la [dérivée][deriv] de la _perte_.
+5. Grâce à la dérivée de la _perte_, on sait exactement comment modifier la "compréhension intuitive" afin que le classifieur ait appris de son erreur.
 6. On retourne à l'étape 2 et on continue jusqu'à avoir vu tous les exemples (idéalement plusieurs fois).
 
-Ouf! Toute une aventure! À ce moment, la "compréhension intuitive" accumulée permet au classificateur de deviner le contenu d'une image sans trop se tromper. En fait, pour 10 classes, il se trompera environ  7 fois sur 10. **"Quoi??? C'est pathétique!"** me direz-vous. Vous avez raison, mais...
+Ouf! Toute une aventure! À ce moment, la "compréhension intuitive" accumulée permet au classifieur de deviner le contenu d'une image sans trop se tromper. En fait, pour 10 classes, il se trompera environ  7 fois sur 10. **"Quoi??? C'est pathétique!"** me direz-vous. Vous avez raison, mais...
 
-Ce qu'il faut garder en tête, c'est qu'en pigeant une classe au hasard, on se tromperait 9 fois sur 10. On réussirait une fois sur dix, par la chance. Puisque le classificateur réussit trois fois sur dix, il est trois fois meilleur! Évidemment, on ne se satisfera pas de cette performance très ordinaire. C'est là que **l'apprentissage profond** entre en jeu!
+Ce qu'il faut garder en tête, c'est qu'en pigeant une classe au hasard, on se tromperait 9 fois sur 10. On réussirait une fois sur dix, par la chance. Puisque le classifieur réussit trois fois sur dix, il est trois fois meilleur! Évidemment, on ne se satisfera pas de cette performance très ordinaire. C'est là que **l'apprentissage profond** entre en jeu!
 
 Avant de passer au prochain sujet, récapitulons. Grâce à l'apprentissage automatique, on peut apprendre à un ordinateur comment deviner le contenu d'une photo. L'ordinateur ne suivra pas une liste d'étapes : il va utiliser une "compréhension intuitive" obtenue par un processus d'apprentissage.
 
