@@ -1,21 +1,42 @@
-# Implications de l'IA pour l'économie et la société
+---
+layout: post
+title: "Implications de l'IA pour l'économie et la société"
+permalink: /ia-economie-societe/
+excerpt_separator: "<!--more-->"
+---
 
 ## Plan
 
-* Augmenter l'employabilité
-	* Donner aux gens un travail qui donne un sens à leur vie
-	* Plus de travailleurs qui font moins d'heures
-	* Faciliter la monnayabilité du talent? (Exemple AirBnB)
-	* On a l'intelligence de créer des machines qui enlèvent l'emploi, on doit avoir l'intelligence
+* L'IA assiste l'humain, ne le remplace pas.
+
+* Améliorer la situation de l'emploi
+	Est-ce que l'IA va voler les jobs?
+	Non: les jobs où l'humain excelle ne sont pas menacées (jobs human-2-human)
+	     l'IA est excellente pour les jobs que personnent ne veut
+	     efficace pour les travaux ennuyeux (radiologie, assurance)
+	Non: il y a moins de travailleurs donc il y a un besoin d'efficacité
+
+	1. Donner aux gens un travail qui donne un sens à leur vie
+	2. Plus de travailleurs qui font moins d'heures
+	3. Automatisation pour répondre au besoin grandissant d'efficacité (population vieillissante, pays avancés tech.)
+	- Faciliter la monnayabilité du talent? (Exemple AirBnB)
+	- On a l'intelligence de créer des machines qui enlèvent l'emploi, on doit avoir l'intelligence
 	  de créer des machines qui améliorent l'employabilité (Kennedy).
-	* "Full employment + Fully implement AI" -Schmidt
-* Automatisation pour répondre au besoin grandissant d'efficacité (population vieillissante, pays avancés tech.)
+	- "Full employment + Fully implement AI" -Schmidt
+
 * Automatisation des processus de l'état:
 	* Meilleure démocratie et communauté (mesures de communauté diminuent depuis 1980.)
 	* Meilleurs services (efficacité/efficience)
 	* Meilleure fiabilité (La carrière politique: tellement plate. Devra être assisté par l'IA.)
-* L'IA est le prochain pétrole
-	* Réduire l'approche "Winner-takes-all". Redistribuer les richesses obtenues grâce à l'IA.
-* Se préparer à l'AGI
+
+* Se préparer à l'AI/AGI
+	* L'IA est le prochain pétrole
 	* Améliorer la communauté
+	* Réduire l'approche "Winner-takes-all". Redistribuer les richesses obtenues grâce à l'IA.
 	* Travailler sur nos valeurs
+
+
+
+
+## Emploi
+
