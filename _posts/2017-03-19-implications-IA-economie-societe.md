@@ -3,16 +3,8 @@ layout: post
 title: "Implications de l'IA pour l'économie et la société"
 permalink: /ia-economie-societe/
 excerpt_separator: "<!--more-->"
+essay: true
 ---
-
-<style>
-	div.post p {
-		text-align: justify;
-		font-size: 0.9rem;
-		line-height: 1.5rem;
-		font-family: serif;
-	}
-</style>
 
 ## Répondre à un besoin
 

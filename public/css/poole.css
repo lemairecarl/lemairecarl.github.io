@@ -81,8 +81,8 @@ a:focus {
 
 /* Headings */
 h1, h2, h3, h4, h5, h6 {
+  font-family: KarmaBold;
   margin-bottom: .5rem;
-  font-weight: bold;
   line-height: 1.25;
   color: #313131;
   text-rendering: optimizeLegibility;
@@ -107,6 +107,8 @@ h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-size: 0.9em;
+  line-height: 1.7;
 }
 
 strong {
@@ -118,6 +120,12 @@ strong {
 ul, ol, dl {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-size: 0.9em;
+}
+.essay ul,
+.essay ol,
+.essay dl {
+  font-size: 0.85em;
 }
 
 dt {
@@ -259,7 +267,7 @@ tbody tr:nth-child(odd) th {
  */
 
 .lead {
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 300;
 }
 
@@ -331,6 +339,12 @@ tbody tr:nth-child(odd) th {
 .page,
 .post {
   margin-bottom: 4em;
+}
+.post.essay p
+{
+  text-align: justify;
+  font-size: 0.85rem;
+  xtext-indent: 2em;
 }
 
 /* Blog post or page title */
