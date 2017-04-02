@@ -1,3 +1,5 @@
+* définir IA, Robot (équivalence)
+
 * L'IA assiste l'humain, ne le remplace pas.
 
 * Améliorer la situation de l'emploi
