@@ -51,6 +51,11 @@
   font-weight: bold;
 }
 @font-face {
+  font-family: MartelExtrabold;
+  src: url(/public/Martel-Extrabold.ttf);
+  font-weight: bold;
+}
+@font-face {
   font-family: AbrilFatface;
   src: url(/public/AbrilFatface-Regular.ttf);
   font-weight: bold;
