@@ -3,6 +3,7 @@ layout: post
 title: "L'univers fascinant de l'apprentissage profond"
 permalink: /apprentissage-profond/
 excerpt_separator: "<!--more-->"
+title-width: 30
 ---
 
 <!-- Inclure jQuery et KaTeX -->

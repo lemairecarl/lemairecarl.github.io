@@ -4,6 +4,7 @@ title: "Automatisation, économie et société"
 permalink: /ia-economie-societe/
 excerpt_separator: "<!--more-->"
 essay: true
+title-width: 24
 ---
 
 ### Moins de travailleurs, plus de travail
