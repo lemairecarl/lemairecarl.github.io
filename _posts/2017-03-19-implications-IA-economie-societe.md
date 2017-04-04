@@ -7,6 +7,9 @@ essay: true
 title-width: 24
 ---
 
+Depuis le début du vingtième siècle, beaucoup d'emplois ont été abolis. Les machines sont devenues de plus en plus sophistiquées, et sont vite devenues plus efficaces que les humains pour une multitude de tâches. Plus récemment, dans les derniers mois, l'intelligence artificielle a fait couler beaucoup d'encre. On entend beaucoup parler des performances exceptionnelles de ces technologies et du fait qu'elle s'approchent du niveau de l'humain. Madame et monsieur Tout-le-monde sont en droit de se demander : « serai-je bientôt remplacé par une machine » ?
+{: .chapeau}
+
 ### Moins de travailleurs, plus de travail
 
 Il existe une peur, celle que les robots « voleront nos jobs » ; qu'ils prendront une part grandissante du « gâteau de l'emploi ». Cette peur ignore le fait que le gâteau grossit à vue d’œil ! La tendance démographique actuelle annonce une baisse de la proportion de personnes aptes à travailler : le « nombre de retraités à soutenir par travailleur » est en hausse.  L'efficacité que l'on va demander à chacun au travail sera toujours plus grande. L'automatisation répond directement à ce besoin : elle permet à un travailleur d'accomplir deux, cinq, dix fois plus de travail pour un même effort. En ce sens, l'intelligence artificielle est un outil d'efficacité précieux.

@@ -346,6 +346,9 @@ tbody tr:nth-child(odd) th {
   font-size: 0.85rem;
   xtext-indent: 2em;
 }
+.post p.chapeau {
+  font-weight: bold;
+}
 
 /* Blog post or page title */
 .page-title,
