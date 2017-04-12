@@ -1,20 +1,22 @@
 ---
 layout: post
-title: "Automatisation, économie et société"
+title: "Automatisation : oppression ou épanouissement ?"
 permalink: /ia-economie-societe/
 excerpt_separator: "<!--more-->"
 essay: true
-title-width: 24
+xtitle-width: 24
 ---
 
-Depuis le début du vingtième siècle, beaucoup d'emplois ont été abolis. Les machines sont devenues de plus en plus sophistiquées, et sont vite devenues plus efficaces que les humains pour une multitude de tâches. Plus récemment, dans les derniers mois, l'intelligence artificielle (IA) a fait couler beaucoup d'encre. On entend beaucoup parler des performances exceptionnelles de ces technologies et du fait qu'elles s'approchent du niveau de l'humain. Madame et monsieur Tout-le-monde sont en droit de se demander : « serai-je bientôt remplacé•e par une machine » ?
+Depuis le début du vingtième siècle, beaucoup d'emplois ont été abolis. Les machines sont devenues de plus en plus sophistiquées, et sont vite devenues plus efficaces que les humains pour une multitude de tâches. Plus récemment, dans les derniers mois, l'intelligence artificielle (IA) a fait couler beaucoup d'encre. On entend beaucoup parler des performances exceptionnelles de ces technologies et du fait qu'elles s'approchent du niveau de l'humain. Madame et monsieur Tout-le-monde sont en droit de se demander : « serai-je bientôt remplacé(e) par une machine ? »
 {: .chapeau}
 
-J'aimerais apporter par cette chronique quelques éléments de réponse à cette question. D'abord, je vais démystifier un peu l'impact qu'aura l'IA sur le marché de l'emploi à moyen terme. Je continuerai ensuite avec ma vision à long terme du rôle de l'humain, de sa raison de vivre.
+<!--more-->
+
+À la lumière de la conférence « [Beneficial AI 2017](https://futureoflife.org/bai-2017) » de la [_Future of Life Institute_](https://futureoflife.org/team/) et de ce que j'ai appris depuis que je baigne dans ce domaine, j'aimerais apporter quelques éléments de réponse à cette question. D'abord, je vais démystifier un peu l'impact qu'aura l'IA sur le marché de l'emploi à moyen terme. Je continuerai ensuite avec ma vision à long terme du rôle de l'humain, de sa raison de vivre.
 
 ### Moins de travailleurs, plus de travail
 
-Il existe une peur ; celle que les robots « voleront nos jobs » , qu'ils prendront une part grandissante du « gâteau de l'emploi ». Cette peur ignore le fait que le gâteau grossit à vue d’œil ! La tendance démographique actuelle annonce une baisse de la proportion de personnes aptes à travailler : le « nombre de retraité•es à soutenir par employé•e » est en hausse. Il va de soi que chacun•e devra être toujours plus efficace au travail. L'automatisation répond directement à ce besoin : elle permet à une personne d'accomplir deux, cinq, dix fois plus de travail pour un même effort. En ce sens, l'intelligence artificielle est un outil d'efficacité précieux.
+Il existe une peur ; celle que les robots « voleront nos jobs » , qu'ils prendront une part grandissante du « gâteau de l'emploi ». Cette peur ignore le fait que le gâteau grossit à vue d’œil ! La tendance démographique actuelle annonce une baisse de la proportion de personnes aptes à travailler : le « nombre de retraité(e)s à soutenir par employé(e) » est en hausse. Il va de soi que chacun•e devra être toujours plus efficace au travail. L'automatisation répond directement à ce besoin : elle permet à une personne d'accomplir deux, cinq, dix fois plus de travail pour un même effort. En ce sens, l'IA est un outil d'efficacité précieux.
 
 Une autre peur, entretenue en grande partie par Hollywood, est celle que les robots vont un jour nous remplacer. Cette peur n'a pas lieu d'être ! Pour que cela se produise, il faudrait créer un robot humanoïde qui excelle dans les compétences humaines. Voilà qui serait inutile ! Il y a plus de chances que l'on assiste à la conception de robots qui auront des compétences complémentaires au humains. Par exemple, je détesterais qu'on veuille remplacer une mère par un robot, même si ce dernier fait la lessive et le ménage trois fois plus vite et sans broncher ! Bien sûr, ce robot ne peut remplacer la mère dans le rôle qu'elle joue auprès de sa famille. Personne ne veut toucher à ça. Mais si un robot pouvait faire la lessive et le ménage trois fois plus vite que Maman (et six fois plus vite que Papa) ? Maman et Papa auraient plus de temps pour élever et aimer activement leurs enfants. Bref, leur rôle n'est pas remplacé, mais ils peuvent se concentrer sur les tâches plus gratifiantes.
 
@@ -24,5 +26,6 @@ Ce sont les tâches les moins gratifiantes qui seront automatisées en premier. 
 
 Au cours de cette marche, il y aura plusieurs obstacles à franchir. L'un d'eux est la culture de la centralisation. La course à la centralisation dure depuis longtemps. Les élites cherchent à concentrer les avoirs et le travail dans les mains d'un petit nombre. Ils cherchent à tirer le maximum du minimum ! Prenez les films Hollywoodiens, par exemple. On crée un morceau de divertissement, on le copie à l'infini et on le vend partout dans le monde. Toutes ces personnes uniques, de toutes cultures, reçoivent la même bébelle. Et si le divertissement redevenait une activité de communauté ? Voilà une activité qui a été, du moins jusqu'à récemment dans l'histoire, une tâche « d'humain à humain » !
 
+### Défis en vue
 
-
+Il est très délicat de faire des prévisions, car les développements en IA sont en accélération. Ça évolue plus vite qu'on ne peut vraiment l'analyser.
