@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Automatisation : oppression ou épanouissement ?"
+title: "Intelligence artificielle : oppression ou épanouissement ?"
 permalink: /ia-economie-societe/
 excerpt_separator: "<!--more-->"
 essay: true
@@ -28,4 +28,16 @@ Au cours de cette marche, il y aura plusieurs obstacles à franchir. L'un d'eux 
 
 ### Défis en vue
 
-Il est très délicat de faire des prévisions, car les développements en IA sont en accélération. Ça évolue plus vite qu'on ne peut vraiment l'analyser.
+Une question très importante émerge : à qui appartient les profits générés grâce à l'intelligence artificielle ? Dans le domaine tel qu'on le connaît aujourd'hui, on aurait tendance à répondre que les profits reviennent à l'entreprise privée : après tout, c'est elle qui a fait des investissements en capital humain (chercheurs), c'est elle qui a déboursé pour amasser les données d'entraînement, et c'est aussi elle qui a acheté le matériel informatique.
+
+Cependant, à mon avis, cette analyse est incomplète. Il faut tenir compte de tous les facteurs qui contribuent au succès de l'entreprise. D'abord, les connaissances issues du domaine de l'IA sont largement du domaine public. Ce sont en grande partie les gouvernements qui ont financé ces projets de recherche, dont les résultats sont à la disposition du privé. En payant l'impôt à l'état, le citoyen est donc indirectement copropriétaire de ces résultats de recherche. En utilisant ces résultats, l'entreprise a donc une « dette » envers le citoyen. Cette dette devient encore plus réelle lorsqu'on pense à l'évasion fiscale dont sont coupables les plus lucratives entreprises privées.
+
+> « Je suis vraiment préoccupé de voir l'IA aggraver la concentration du pouvoir et des richesses que l'on voit depuis les 30 dernières années.[^1] »  
+> — Yoshua Bengio, directeur de l'Institut des algorithmes d'apprentissage de Montréal
+
+
+---
+
+## Notes et références
+
+[^1]: [futureoflife.org/2017/03/16/shared-prosperity-principle](https://futureoflife.org/2017/03/16/shared-prosperity-principle)

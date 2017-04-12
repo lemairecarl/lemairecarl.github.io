@@ -21,6 +21,16 @@ Idées de titre:
 * Risques, défis
 	(Éviter la complaisance)
 	- IA et inégalité de revenus
+	Il est très délicat de faire des prévisions, car les développements en IA sont en accélération. Ça évolue plus vite qu'on ne peut vraiment l'analyser. 
+
+	AI is likely to dramatically increase income disparity, perhaps more so than other technologies that have come about recently. If a significant percentage of the populace loses employment, that’s going to create severe problems, right? We need to be thinking about ways to cope with these issues, very seriously and soon.
+	- Dan Weld, a professor at the University of Washington
+
+	“I’m really concerned about AI worsening the effects and concentration of power and wealth that we’ve seen in the last 30 years,” Bengio added.
+
+	“It’s a real fundamental problem facing our society today, which is the increasing inequality and the fact that prosperity is not being shared around,” explained Toby Walsh, a professor at UNSW Australia.
+
+
 
 ------
 
