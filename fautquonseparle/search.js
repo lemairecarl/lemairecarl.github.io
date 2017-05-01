@@ -50,7 +50,7 @@ function getQueryVariable(variable) {
 }
 
 $(document).ready(function() {
-    var searchTerm = getQueryVariable('query');
+    var searchTerm = getQueryVariable('requete');
 
     if (searchTerm) {
         document.getElementById('search-results').innerHTML = 'Veuillez patienter...';

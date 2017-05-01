@@ -20,6 +20,17 @@ body p {
     max-width: 40em;
 }
 
+form {
+    margin-top: 3em;
+    padding:0.5em;
+    border:1px solid blue;
+    max-width: 40em;
+}
+
 form label {
     font-weight: bold;
+}
+
+form input#search-box {
+    width: 35em;
 }
