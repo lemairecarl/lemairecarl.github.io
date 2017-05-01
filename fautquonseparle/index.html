@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Faut qu'on se parle</title>
+
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="lunr.js"></script>
+    <script src="lunr.stemmer.support.js"></script>
+    <script src="lunr.fr.js"></script>
+    <script src="csvloader.js"></script>
+    <script src="search.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Faut qu'on se parle.</h1>
+
+    <h2>Effectuez une recherche dans les données ouvertes du projet <a href="http://fautquonseparle.org"><i>Faut qu'on se parle</i></a>.</h2>
+
+    <form method="get">
+      <input type="text" id="search-box" name="query" placeholder="Entrez votre requête ici">
+      <input type="submit" value="chercher">
+    </form>
+
+    <ul id="search-results"></ul>
+</body>
+</html>
