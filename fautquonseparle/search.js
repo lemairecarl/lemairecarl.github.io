@@ -53,6 +53,8 @@ $(document).ready(function() {
     var searchTerm = getQueryVariable('query');
 
     if (searchTerm) {
+        document.getElementById('search-results').innerHTML = 'Veuillez patienter...';
+
         $.ajax({
             type: "GET",
             url: "fautquonseparle.txt",
