@@ -38,11 +38,14 @@ J'ai vu dans cette base de données une opportunité : l'opportunité de faire u
 
 Normalement, pour qu'une idée se rende au gouvernement, elle doit être formulée à un représentant, un député, qui lui se chargera d'amener l'idée plus haut. Maintenant, imaginons un instant que les citoyens puissent formuler leurs idées directement au gouvernement. Le problème, c'est que les décisions qui sont prises touchent des milliers de personnes. Une idée doit concerner un grande nombre de personnes pour être considérée. C'est la force du nombre.
 
+![Hall of Shame]({{ site.url }}/assets/paquet.png)
+_Un paquet d'idées similaires (vraies données de Faut qu'on se parle)._
+
 Mais comment peut-on avoir la force du nombre lorsque tous formulent leur propre opinion librement? Il faut tenter de regrouper les idées en paquets. Une opinion va probablement être partagée par des centaines, voire des milliers de personnes. Si on pouvait prendre la mer d'opinion et la regrouper en paquets, où chaque paquet contient différentes formulations de la même idée, on trouverait la force du nombre tant désirée! Voilà l'objectif que je me suis donné.
 
 ### Diamant brut
 
-J'ai utilisé des techniques de la science des données pour permettre ces regroupements.[^3] Mais la tâche n'a pas été facile : les données de _Faut qu'on se parle_ sont... disons « organiques ». Organiques dans le sens où les gens ont écrit ce qui leur passait par la tête, avec leur propres capacités d'écriture. Cela implique que la base de données contient énormément de fautes de français! Certaines réponses demandaient d'être déchiffrées, et d'autres étaient simplement incompréhensibles.
+J'ai utilisé des techniques de la science des données pour permettre ces regroupements. Mais la tâche n'a pas été facile : les données de _Faut qu'on se parle_ sont... disons « organiques ». Organiques dans le sens où les gens ont écrit ce qui leur passait par la tête, avec leur propres capacités d'écriture. Cela implique que la base de données contient énormément de fautes de français! Certaines réponses demandaient d'être déchiffrées, et d'autres étaient simplement incompréhensibles.
 
 ![Hall of Shame]({{ site.url }}/assets/retroconstruire.png){:style="border: 1px solid #aaa"}
 _Un aperçu des mots mal orthographiés (ou inexistants) que j'ai trouvés._
@@ -63,6 +66,12 @@ Cette conversion est un compromis : on perd certaines informations, mais on peu
 
 Le résultat de cette méthode est [la mappe d'idées pour le Québec](https://lemairecarl.github.io/fautquonseparle/mappe) dont j'ai parlé plus haut. Je n'entrerai pas ici dans les détails d'implémentation ; j'expliquerai la méthode étape par étape dans un article de vulgarisation.
 
+### Conclusion
+
+Bref, voici un exemple de projet qui met l'intelligence artificielle et la science des données au service de la démocratie. Le projet est une preuve de concept ; malheureusement, la quantité et la fiabilité des données ne sont pas suffisantes pour justifier des actions de la part des élus. Malgré tout, on peut imaginer que ce genre de projet puisse un jour amplifier la force du nombre et aider à porter la voix du citoyen.
+
+Merci de m'avoir lu! N'hésitez pas à donner votre point de vue dans les commentaires.
+
 ---
 
 ## Notes et références
@@ -70,5 +79,3 @@ Le résultat de cette méthode est [la mappe d'idées pour le Québec](https://l
 [^1]: [Dupuis-Déri, Francis](https://politique.uqam.ca/corps-professoral/professeurs/162-dupuis-deri-francis.html). _Démocratie : histoire politique d'un mot - aux États-Unis et en France_. Montréal, Lux, 2013.
 
 [^2]: Jean-Martin Aussant, Claire Bolduc, Véronique Côté, Maïtée Labrecque-Saganash, Aurélie Lanctôt, Karel Mayrand, Gabriel Nadeau-Dubois, Will Prosper, Alain Vadeboncoeur. _Ne renonçons à rien_. Montréal, Lux, 2017.
-
-[^3]: En réalité, je n'ai pas fait de _clustering_. J'ai plutôt projeté les données dans un espace à haute dimensionnalité dans lequel les classes sont séparables; ensuite, j'ai utilisé t-SNE pour visualiser cet espace sur un écran en deux dimensions.
