@@ -4,6 +4,7 @@ title: "Intelligence artificielle : oppression ou épanouissement ?"
 permalink: /ia-economie-societe/
 excerpt_separator: "<!--more-->"
 essay: true
+sorte: Essai
 xtitle-width: 24
 ---
 
@@ -35,6 +36,11 @@ Cependant, à mon avis, cette analyse est incomplète. Il faut tenir compte de t
 > « **Je suis vraiment préoccupé de voir l'IA aggraver la concentration du pouvoir et des richesses que l'on voit depuis les 30 dernières années.**[^1] »  
 > — Yoshua Bengio, directeur de l'Institut des algorithmes d'apprentissage de Montréal
 
+### Conclusion
+
+Le développement effréné de l'intelligence artificielle comporte de nombreux risques ; l'aggravation de la concentration des pouvoirs en est un exemple. Malgré tout, l'IA pourrait être un énorme avantage dans notre marche vers une société plus humaine. Mais ce n'est pas l'IA qui va faire évoluer l'humanité. Il est primordial que l'humanité, elle-même d'abord, évolue pour bien gérer les situations complexes amenées par ces nouvelles technologies si puissantes.
+
+Merci de m'avoir lu! Je suis conscient d'avoir avancé nombre d'affirmations sans les avoir supportées ; je m'en excuse, c'est par manque de temps. Si vous trouvez des références qui supportent ou réfutent certaines de mes affirmations, je suis preneurs. Laissez un commentaire!
 
 ---
 
