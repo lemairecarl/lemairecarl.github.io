@@ -7,6 +7,9 @@ title: Home
   p.chapeau {
     font-weight: normal !important;
   }
+  div.footnotes {
+    display: none;
+  }
 </style>
 
 <div class="posts">
@@ -18,7 +21,7 @@ title: Home
       </a>
     </h1>
 
-    <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}</span>
+    <span class="post-date">{{ post.date | date: "%Y-%m-%d" }}{% if post.sorte %} • {{ post.sorte }}{% endif %}</span>
 
     {{ post.excerpt }}
 
