@@ -40,7 +40,7 @@ Cependant, à mon avis, cette analyse est incomplète. Il faut tenir compte de t
 
 Le développement effréné de l'intelligence artificielle comporte de nombreux risques ; l'aggravation de la concentration des pouvoirs en est un exemple. Malgré tout, l'IA pourrait être un énorme avantage dans notre marche vers une société plus humaine. Mais ce n'est pas l'IA qui va faire évoluer l'humanité. Il est primordial que l'humanité, elle-même d'abord, évolue pour bien gérer les situations complexes amenées par ces nouvelles technologies si puissantes.
 
-Merci de m'avoir lu! Je suis conscient d'avoir avancé nombre d'affirmations sans les avoir supportées ; je m'en excuse, c'est par manque de temps. Si vous trouvez des références qui supportent ou réfutent certaines de mes affirmations, je suis preneurs. Laissez un commentaire!
+Merci de m'avoir lu! Je suis conscient d'avoir avancé nombre d'affirmations sans les avoir supportées ; je m'en excuse, c'est par manque de temps. Si vous trouvez des références qui supportent ou réfutent certaines de mes affirmations, je suis preneur. Laissez un commentaire!
 
 ---
 
