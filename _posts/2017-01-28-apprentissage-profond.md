@@ -78,13 +78,9 @@ Je vais conclure cette section avec une touche historique. Étonnamment, beaucou
 
 Les réseaux de neurones sont une des nombreuses techniques d'apprentissage automatique. Il s'agit de la technique qui a eu le plus de succès à ce jour. Je vais maintenant vous expliquer comment cette technique fonctionne.
 
-Vous êtes-vous déjà demandé ce qui se passe avec tous les cerveaux de bétail qui ne sont pas mangés? On les amène dans de grandes installations souterraines et [on y plante des électrodes afin de les utiliser pour faire des calculs](/rickroll/).
-
-M'avez-vous cru? _J'espère que non!_ Je vous menais en bateau...
-
 ### Pas comme notre cerveau
 
-En réalité, bien que les réseaux de neurones tirent une certaine inspiration des cerveaux animaux, concrètement, ils en sont très loin! En général, ces réseaux sont une approximation trop grossière du fonctionnement de notre cerveau pour être utiles aux neurosciences.
+Bien que les réseaux de neurones tirent une certaine inspiration des cerveaux animaux, concrètement, ils en sont très loin! En général, ces réseaux sont une approximation trop grossière du fonctionnement de notre cerveau pour être utiles aux neurosciences.
 
 Les recherches en réseaux de neurones artificiels sont guidées principalement par les mathématiques et l'ingénierie, dans le but de créer des machines qui peuvent atteindre la **généralisation statistique**, en empruntant de temps à autre des intuitions aux sciences cognitives.[^2]
 
