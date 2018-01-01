@@ -131,6 +131,17 @@ html {
   font-weight: normal;
 }
 
+.sidebar-about #social {
+  list-style-type: none;
+  padding-left: 0;
+  font-size: 0.7em;
+}
+.sidebar-about #social .username {
+  margin-left: 0.7em;
+  margin-right: 0.4em;
+  font-size: 0.9rem;
+}
+
 /* Sidebar nav */
 .sidebar-nav-item {
   display: block;

@@ -50,7 +50,7 @@ J'ai utilisé des techniques de la science des données pour permettre ces regro
 ![Hall of Shame]({{ site.url }}/assets/retroconstruire.png){:style="border: 1px solid #aaa"}
 _Un aperçu des mots mal orthographiés (ou inexistants) que j'ai trouvés._
 
-J'ai donc passé la majorité de mon temps sur ce projet à préparer les données pour qu'elles soient utilisables. J'ai corrigé des centaines de fautes d'orthographe. Comment quelqu'un peut-il trouver la motivation à corriger des centaines de fautes dans son temps libre? Caféine. Beaucoup. Évidemment, avec une plus grande base de données, il faudrait utiliser un autre moyen, comme par exemple de forcer l'utilisation d'un système de correction (à la Antidote) avant l'envoi du texte.
+J'ai donc passé la majorité de mon temps sur ce projet à préparer les données pour qu'elles soient utilisables. J'ai corrigé des centaines de fautes d'orthographe. Comment quelqu'un peut-il trouver la motivation de corriger des centaines de fautes dans son temps libre? Caféine. Beaucoup. Évidemment, avec une plus grande base de données, il faudrait utiliser un autre moyen, comme par exemple de forcer l'utilisation d'un système de correction (à la Antidote) avant l'envoi du texte.
 
 ### Espace à 64 dimensions
 
