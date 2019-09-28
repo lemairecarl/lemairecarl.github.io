@@ -32,7 +32,7 @@ L'apprentissage automatique (_Machine Learning_, "ML") est un champ d'étude de 
 
 Un programme informatique typique est une "recette" spécifiée entièrement par le programmeur. Avec le ML, une partie importante du programme n'est pas donnée par le programmeur : elle est "apprise" automatiquement.
 
-Voyons un usage du ML qui a beaucoup de succès : la reconnaissance d'images. Le défi ici est de faire un système qui prend une photo et donne une description de ce qui se trouve dans cette photo. Une belle motivation à relever ce défi est de permettre aux malvoyants d'utiliser des applications qui contiennent beaucoup d'images.
+Voyons un usage du ML qui a beaucoup de succès : la reconnaissance d'images. Le défi ici est de faire un système qui reçoit une photo et retourne une description de ce qui se trouve dans cette photo. Une belle motivation à relever ce défi est de permettre aux malvoyants d'utiliser des applications comme Facebook, par exemple.
 
 ### La classification
 
@@ -41,7 +41,7 @@ Typiquement, lorsqu'on parle de reconnaissance d'images, on parle de classificat
 ![L'ensemble d'images CIFAR10]({{ site.url }}/assets/cifar10.png)
 *Le célèbre ensemble d'images CIFAR-10. Il contient 10 classes avec 6000 exemples chacune. CIFAR est l'acronyme de Canadian Institute For Advanced Research.*
 
-Grâce à cette "compréhension intuitive", le **classifieur** dira "chat!" en voyant une photo de chat, ou "grenouille!" en voyant une photo de grenouille. Si on ne lui a pas montré d'exemples de cuisinier, il ne sera pas capable de reconnaître cette classe. L'apprentissage se déroule comme suit :
+Grâce à cette "compréhension intuitive", le **classifieur** retournera "chat" en voyant une photo de chat, ou "grenouille" en voyant une photo de grenouille. Si on ne lui a pas montré d'exemples de pommes, il sera inutile pour reconnaître cette classe. L'apprentissage se déroule comme suit :
 
 1. On initialise la "compréhension intuitive" (concrètement : un tas de nombres) avec du n'importe quoi. Le classifieur se trompera donc très souvent au départ.
 2. Le classifieur prend une image et tente de déterminer sa classe.
@@ -49,7 +49,7 @@ Grâce à cette "compréhension intuitive", le **classifieur** dira "chat!" en v
 
    $$ p_{chat} = \bold{60\%},\enspace p_{chien} = 35\%,\enspace p_{cheval} = 5\% $$.
 
-   Cependant, au début de l'apprentissage, il risque plutôt de sortir quelque chose comme :
+   Cependant, au début de l'apprentissage, il risque de sortir quelque chose comme :
 
    $$ p_{chat} = \bold{3\%},\enspace p_{chien} = 2\%,\enspace p_{cheval} = 95\% $$.
 
@@ -58,11 +58,7 @@ Grâce à cette "compréhension intuitive", le **classifieur** dira "chat!" en v
 5. Grâce à la dérivée de la _perte_, on sait exactement comment modifier la "compréhension intuitive" afin que le classifieur ait appris de son erreur.
 6. On retourne à l'étape 2 et on continue jusqu'à avoir vu tous les exemples (idéalement plusieurs fois).
 
-Ouf! Toute une aventure! À ce moment, la "compréhension intuitive" accumulée permet au classifieur de deviner le contenu d'une image sans trop se tromper. En fait, pour 10 classes, il se trompera environ  7 fois sur 10. **"Quoi??? C'est pathétique!"** me direz-vous. Vous avez raison, mais...
-
-Ce qu'il faut garder en tête, c'est qu'en pigeant une classe au hasard, on se tromperait 9 fois sur 10. On réussirait une fois sur dix, par la chance. Puisque le classifieur réussit trois fois sur dix, il est trois fois meilleur! Évidemment, on ne se satisfera pas de cette performance très ordinaire. C'est là que **l'apprentissage profond** entre en jeu!
-
-Avant de passer au prochain sujet, récapitulons. Grâce à l'apprentissage automatique, on peut apprendre à un ordinateur comment deviner le contenu d'une photo. L'ordinateur ne suivra pas une liste d'étapes : il va utiliser une "compréhension intuitive" obtenue par un processus d'apprentissage.
+Ouf! Toute une aventure! À ce moment, la "compréhension intuitive" accumulée permet au classifieur de deviner le contenu d'une image sans trop se tromper. Avant de passer à l'apprentissage profond, récapitulons. Grâce à l'apprentissage automatique, on peut apprendre à un ordinateur comment deviner le contenu d'une photo. L'ordinateur ne suivra pas une liste d'étapes : il va utiliser une "compréhension intuitive" obtenue par un processus d'apprentissage.
 
 Je vais conclure cette section avec une touche historique. Étonnamment, beaucoup de connaissances du ML existent depuis les années 80! C'est seulement récemment qu'on en récolte les fruits. Le succès de l'apprentissage automatique dépend principalement de deux choses:
 
@@ -76,11 +72,11 @@ Je vais conclure cette section avec une touche historique. Étonnamment, beaucou
 
 ## Les réseaux de neurones
 
-Les réseaux de neurones sont une des nombreuses techniques d'apprentissage automatique. Il s'agit de la technique qui a eu le plus de succès à ce jour. Je vais maintenant vous expliquer comment cette technique fonctionne.
+Les réseaux de neurones sont une des nombreuses techniques d'apprentissage automatique. Il s'agit de la technique qui a eu le plus de succès à ce jour. Je vais maintenant tenter de vulgariser cette technique.
 
 ### Pas comme notre cerveau
 
-Bien que les réseaux de neurones tirent une certaine inspiration des cerveaux animaux, concrètement, ils en sont très loin! En général, ces réseaux sont une approximation trop grossière du fonctionnement de notre cerveau pour être utiles aux neurosciences.
+Bien qu'un réseau de neurones artificiel soit inspiré en partie du cerveau animal, concrètement, il en est très loin! En général, ces réseaux sont une approximation trop grossière du fonctionnement du cerveau humain pour être utile aux neurosciences.
 
 Les recherches en réseaux de neurones artificiels sont guidées principalement par les mathématiques et l'ingénierie, dans le but de créer des machines qui peuvent atteindre la **généralisation statistique**, en empruntant de temps à autre des intuitions aux sciences cognitives.[^2]
 
