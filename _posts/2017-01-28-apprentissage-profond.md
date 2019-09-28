@@ -22,9 +22,9 @@ Comment un ordinateur peut-il _apprendre_ ? En quoi l'apprentissage profond est
 
 >L'intelligence artificielle est une discipline scientifique recherchant des méthodes de résolution de problèmes à forte complexité logique ou algorithmique. ([Wikipédia](https://fr.wikipedia.org/wiki/Intelligence_artificielle))
 
-Ce domaine ne cherche pas à répliquer le fonctionnement d'un cerveau animal comme le nôtre. L'intelligence artificielle cherche à résoudre des problèmes qui nécessitent de l'intelligence. Par exemple : faire des calculs mathématiques ou jouer aux échecs. Pour ces deux exemples, il est possible de concevoir des "recettes" que l'ordinateur pourra exécuter, étape par étape.
+Ce domaine ne cherche pas à répliquer le fonctionnement d'un cerveau animal comme le nôtre. L'intelligence artificielle (IA) cherche à résoudre des problèmes qui nécessitent de l'intelligence. Par exemple : faire des calculs mathématiques ou jouer aux échecs. Pour ces deux exemples, il est possible de concevoir des "recettes" que l'ordinateur pourra exécuter, étape par étape.
 
-La force de l'ordinateur est qu'il exécute des millions d'étapes par seconde sans se tromper. Suivant cette définition, l'intelligence artificielle ne devrait pas vous faire plus peur qu'un cuisinier hyperactif et rigoureux. (Notons qu'en ajoutant l'adjectif _violent_, on obtient la définition de Gordon Ramsay. Heureusement, un microprocesseur n'est pas violent.)
+La force de l'ordinateur est qu'il exécute des millions d'étapes par seconde sans se tromper, et ce sur une quantité énorme de données. Ainsi, "intelligence artificielle" n'est qu'un terme sensationnaliste pour décrire ce qui se passe dans une machine à calculer. Un aspect important de l'intelligence est l'apprentissage; or, les techniques d'IA n'utilisent pas toujours l'apprentissage! Cependant, certaines techniques le font.
 
 ## L'apprentissage automatique
 
