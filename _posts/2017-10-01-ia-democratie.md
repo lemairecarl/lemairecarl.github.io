@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "La démocratie directe grâce à l'intelligence artificielle"
+title: "L'intelligence artificielle au service de la démocratie"
 permalink: /ia-democratie/
 sorte: Essai
 excerpt_separator: "<!--more-->"
