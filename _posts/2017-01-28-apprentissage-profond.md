@@ -58,7 +58,7 @@ Grâce à cette "compréhension intuitive", le **classifieur** retournera "chat"
 5. Grâce à la dérivée de la _perte_, on sait exactement comment modifier la "compréhension intuitive" afin que le classifieur ait appris de son erreur.
 6. On retourne à l'étape 2 et on continue jusqu'à avoir vu tous les exemples (idéalement plusieurs fois).
 
-Ouf! Toute une aventure! À ce moment, la "compréhension intuitive" accumulée permet au classifieur de deviner le contenu d'une image sans trop se tromper. Avant de passer à l'apprentissage profond, récapitulons. Grâce à l'apprentissage automatique, on peut apprendre à un ordinateur comment deviner le contenu d'une photo. L'ordinateur ne suivra pas une liste d'étapes : il va utiliser une "compréhension intuitive" obtenue par un processus d'apprentissage.
+Ouf! Toute une aventure! À ce moment, la "compréhension intuitive" accumulée permet au classifieur de deviner le contenu d'une image sans trop se tromper. Avant de continuer, récapitulons. Grâce à l'apprentissage automatique, on peut apprendre à un ordinateur comment deviner le contenu d'une photo. L'ordinateur ne suivra pas une liste d'étapes : il va utiliser une "compréhension intuitive" obtenue par un processus d'apprentissage.
 
 Je vais conclure cette section avec une touche historique. Étonnamment, beaucoup de connaissances du ML existent depuis les années 80! C'est seulement récemment qu'on en récolte les fruits. Le succès de l'apprentissage automatique dépend principalement de deux choses:
 
