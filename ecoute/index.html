@@ -148,10 +148,12 @@ table {
     var numQuestions = 8;
     for (var i = 1; i <= numQuestions; i++) {
         var questionInput = document.querySelector('input[name="question' + i + '"]:checked');
-        var questionValue = questionInput.value;
-        var label = labels[questionValue];
-        if (label) {
-            types[label]++;
+        if (questionInput) {
+            var questionValue = questionInput.value;
+            var label = labels[questionValue];
+            if (label) {
+                types[label]++;
+            }
         }
     }
 
