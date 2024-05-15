@@ -8,17 +8,20 @@
     <style>
 body { font-family: sans-serif; max-width: 50em; }
 fieldset { border: 6px solid #cef; margin-bottom: 10px }
-#intro {margin-bottom: 20px}
+#intro {margin-bottom: 10px; padding: 10px;}
 
-h1 { font-size: 18px; margin: 10px; }
+h1 { font-size: 18px; }
 h2 { font-size: 18px; }
-p {margin: 10px; }
 label { display: block; }
 th { text-align: left; padding: 6px; }
 td { padding: 6px; }
 :checked + span { font-weight: bold; }
 #submitButton { margin-top: 10px; margin-bottom: 10px; padding: 6px; font-size: 16px; }
 #summary { display: none; border: 6px solid #cef; padding: 10px; margin-top: 10px;  }
+table {
+    border: 1px solid;
+    padding: 10px;
+}
 
     </style>
 </head>
@@ -125,41 +128,26 @@ td { padding: 6px; }
 
     // Labels for the values
     var labels = {
-        "?": "Solution",
-        "=": "Compassion",
-        "+": "Interprétation",
         "%": "Évaluation",
+        "?": "Solution",
+        "&": "Soutien",
         "*": "Investigation",
-        "&": "Soutien"
+        "+": "Interprétation",
+        "=": "Compassion",
     };
 
-    // Count occurrences of each type
+    // Initialize counts of each type to 0
     var types = {};
-    types["Solution"] = 0;
-    types["Compassion"] = 0;
-    types["Interprétation"] = 0;
-    types["Évaluation"] = 0;
-    types["Investigation"] = 0;
-    types["Soutien"] = 0;
+    for (var label in labels) {
+        types[labels[label]] = 0;
+    }
 
     // Retrieve selected values
-    var question1Value = document.querySelector('input[name="question1"]:checked').value;
-    var question2Value = document.querySelector('input[name="question2"]:checked').value;
-    var question3Value = document.querySelector('input[name="question3"]:checked').value;
-    var question4Value = document.querySelector('input[name="question4"]:checked').value;
-    var question5Value = document.querySelector('input[name="question5"]:checked').value;
-    var question6Value = document.querySelector('input[name="question6"]:checked').value;
-    var question7Value = document.querySelector('input[name="question7"]:checked').value;
-    var question8Value = document.querySelector('input[name="question8"]:checked').value;
-
-    types[labels[question1Value]]++;
-    types[labels[question2Value]]++;
-    types[labels[question3Value]]++;
-    types[labels[question4Value]]++;
-    types[labels[question5Value]]++;
-    types[labels[question6Value]]++;
-    types[labels[question7Value]]++;
-    types[labels[question8Value]]++;
+    var numQuestions = 8;
+    for (var i = 1; i <= numQuestions; i++) {
+        var questionValue = document.querySelector('input[name="question' + i + '"]:checked').value;
+        types[labels[questionValue]]++;
+    }
 
 
     // Display summary as a table
