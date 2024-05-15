@@ -1,1 +1,89 @@
-Hello World
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+      body { font-family: sans-serif; }
+fieldset { border: 6px solid #cef; margin-bottom: 10px }
+h1 { font-size: 18px; }
+label { display: block; }
+th { text-align: left; padding: 6px; }
+td { padding: 6px; }
+:checked + span { font-weight: bold; }
+#submitButton { margin-top: 10px; margin-bottom: 10px; padding: 6px; font-size: 16px; }
+#summary { display: none; border: 6px solid #cef; padding: 10px; margin-top: 10px;  }
+    </style>
+</head>
+<body>
+    <form id="myForm">
+        <fieldset>
+            <h1>« Il va falloir que je déménage dans une résidence un jour. Je me suis mise sur la liste d’attente. Quand ils vont m’appeler, il va falloir que je vende ma maison. Mais je ne me vois pas en train de déménager...  »</h1>
+            <label for="question1a"><input type="radio" id="question1a" name="question1" value="?"> As-tu pensé à faire des contacts préalables avec un agent d’immeuble?</label><br>
+            <label for="question1b"><input type="radio" id="question1b" name="question1" value="="> Ce n’est pas facile pour toi d’envisager l’idée de quitter un jour ta maison?</label><br>
+            <label for="question1c"><input type="radio" id="question1c" name="question1" value="+"> Quitter la maison à laquelle on est habitué, c’est un peu comme si on mourait. Est-ce que c’est çà le raisonnement que tu fais?</label><br>
+            <label for="question1d"><input type="radio" id="question1d" name="question1" value="%"> Je comprends. Mais ça ne te donne rien de vivre dans le futur. Il faut que tu vives dans le présent sans te tracasser pour rien.</label><br>
+            <label for="question1e"><input type="radio" id="question1e" name="question1" value="*"> Combien de temps ça peut prendre avant qu’un logement se libère à la résidence?</label><br>
+            <label for="question1f"><input type="radio" id="question1f" name="question1" value="&"> Oh! Ne t’en fais pas. Tu verras que quand le temps sera venu, tu seras bien contente de ne plus avoir à t’occuper d’une grande maison.</label><br>
+        </fieldset>
+        <fieldset>
+            <h1>« Ma fille qui est divorcée sort avec un homme marié. J’ai toujours fait confiance à son jugement, mais là, je sens qu’il faut que j’intervienne. Je ne peux pas laisser passer ça... »</h1>
+            <label for="question2a"><input type="radio" id="question2a" name="question2" value="+"> Tu dois te dire que les Commandements de Dieu, c’est bon pour tout le monde et que notre fille reste toujours notre fille. C’est pour ça que tu te sens obligée d’intervenir.</label><br>
+            <label for="question2b"><input type="radio" id="question2b" name="question2" value="*"> Est-ce que tu sais comment ça va, dans le ménage de cet homme-là?</label><br>
+            <label for="question2c"><input type="radio" id="question2c" name="question2" value="%"> En effet, il y a des situations comme celle-là où il faut avoir le courage de ses convictions.</label><br>
+            <label for="question2d"><input type="radio" id="question2d" name="question2" value="?"> XXXX Penses-tu que tu es la mieux placée pour intervenir, ou est-ce qu’elle a une sœur ou un</label><br>
+            <label for="question2e"><input type="radio" id="question2e" name="question2" value="="> Tu sens qu’il faut intervenir, mais en même temps, tu n’es pas tout à fait décidée.</label><br>
+            <label for="question2f"><input type="radio" id="question2f" name="question2" value="&"> Je trouve ça bon que tu sois venue me parler. Je suis sûre qu’ensemble, on peut trouver une façon de résoudre ton problème.</label><br>
+        </fieldset>
+        <button id="submitButton">Soumettre les réponses</button>
+    </form>
+    <div id="summary"></div>
+
+    <script>
+      document.getElementById('submitButton').addEventListener('click', function(event) {
+    event.preventDefault(); // Prevent default button behavior
+
+    // Retrieve selected values
+    var question1Value = document.querySelector('input[name="question1"]:checked').value;
+    var question2Value = document.querySelector('input[name="question2"]:checked').value;
+
+    // Labels for the values
+    var labels = {
+        "?": "Solution",
+        "=": "Compassion",
+        "+": "Interprétation",
+        "%": "Évaluation",
+        "*": "Investigation",
+        "&": "Soutien"
+    };
+
+    // Count occurrences of each type
+    var types = {};
+    types["Solution"] = 0;
+    types["Compassion"] = 0;
+    types["Interprétation"] = 0;
+    types["Évaluation"] = 0;
+    types["Investigation"] = 0;
+    types["Soutien"] = 0;
+    types[labels[question1Value]]++;
+    types[labels[question2Value]]++;
+
+    // Display summary as a table
+    var summary = "<p>Voici un aperçu de vos habitudes d'écoute:</p><table><tr><th>Manière</th><th>Nombre</th><th></th></tr>";
+    Object.keys(types).forEach(function(type) {
+        summary += "<tr><td>" + type + "</td><td>" + types[type] + " fois</td><td>";
+        if (types[type] > 0) {
+            summary += "🔵".repeat(types[type]);
+        }
+        summary += "</td></tr>";
+    });
+    summary += "</table>";
+    document.getElementById('summary').innerHTML = summary;
+    document.getElementById('summary').style.display = "block";
+    document.getElementById('summary').scrollIntoView();
+});
+    </script>
+</body>
+</html>
