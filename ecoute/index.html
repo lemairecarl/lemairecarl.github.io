@@ -13,11 +13,14 @@ fieldset { border: 6px solid #c3efbf; margin-bottom: 20px }
 
 h1 { font-size: 26px; }
 h2 { font-size: 18px; }
-input[type="radio"] { display: inline-block; }
+input[type="radio"] { display: inline-block; margin-top: 10px; }
 input[type="radio"]:checked + label {
-    background-color: lightblue;
+    background-color: #cdf3ff;
 }
-label { display: inline-block; }
+input[type="radio"]:hover + label {
+    background-color: #eee;
+}
+label { display: inline-block; padding: 4px }
 th { text-align: left; padding: 6px; }
 td { padding: 6px; }
 :checked + span { font-weight: bold; }
