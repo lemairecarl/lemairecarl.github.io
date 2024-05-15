@@ -12,6 +12,7 @@ fieldset { border: 6px solid #cef; margin-bottom: 10px }
 
 h1 { font-size: 18px; margin: 10px; }
 h2 { font-size: 18px; }
+p {margin: 10px; }
 label { display: block; }
 th { text-align: left; padding: 6px; }
 td { padding: 6px; }
@@ -25,17 +26,18 @@ td { padding: 6px; }
     <div id="intro">
     <h1>Activité sur les habitudes d'écoute spontanées</h1>
     <p>L’exercice poursuit trois (3) objectifs :
-
-• Distinguer les différentes manières de communiquer ;
-• Réfléchir sur la pertinence relative de ces différents types;
-• Identifier votre propre style de communication.
-
-Vous trouverez ci-dessous huit (8) extraits d’un entretien. Pour chacun de ces extraits, il y a six manières différentes d'y répondre.
-• Lisez bien ce que la personne dit et imaginez que vous avez à lui répondre.
-• Lisez ensuite toutes les réponses qui sont proposées pour ce fragment de conversation.
-• Cochez la réponse qui se rapproche le plus de ce que vous auriez répondu à cette personne.
-
-Il est très important de répondre de manière spontanée. Choisissez la réponse qui se rapproche le plus de ce que vous auriez dit.
+        <ul>
+            <li>Distinguer les différentes manières de communiquer;</li>
+            <li>Réfléchir sur la pertinence relative de ces différents types;</li>
+            <li>Identifier votre propre style de communication.</li>
+        </ul>
+        Vous trouverez ci-dessous huit (8) extraits d’un entretien. Pour chacun de ces extraits, il y a six manières différentes d'y répondre.
+        <ul>
+            <li>Lisez bien ce que la personne dit et imaginez que vous avez à lui répondre;</li>
+            <li>Lisez ensuite toutes les réponses qui sont proposées pour ce fragment de conversation;</li>
+            <li>Cochez la réponse qui se rapproche le plus de ce que vous auriez répondu à cette personne.</li>
+        </ul>
+        Il est très important de répondre de manière spontanée. Choisissez la réponse qui se rapproche le plus de ce que vous auriez dit.
     </p>
     </div>
 
@@ -169,7 +171,7 @@ Il est très important de répondre de manière spontanée. Choisissez la répon
         }
         summary += "</td></tr>";
     });
-    summary += "</table>";
+    summary += "</table><p>Merci d'avoir joué! Prenez en note vos résultats, nous y reviendrons bientôt!</p>";
     document.getElementById('summary').innerHTML = summary;
     document.getElementById('summary').style.display = "block";
     document.getElementById('summary').scrollIntoView();
