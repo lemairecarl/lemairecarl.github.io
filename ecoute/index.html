@@ -4,13 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Activité sur les habitudes d'écoute spontanées</title>
+    <title>Vos habitudes de communication spontanées</title>
     <style>
 body { font-family: sans-serif; background-color: #eee; }
 #container { max-width: 50em; margin: 0 auto; padding: 20px; background-color: #fff; }
-fieldset { border: 6px solid #c3efbf; margin-bottom: 10px }
+fieldset { border: 6px solid #c3efbf; margin-bottom: 20px }
 #intro {margin-bottom: 10px; padding: 10px;}
 
+h1 { font-size: 26px; }
 h2 { font-size: 18px; }
 label { display: block; }
 th { text-align: left; padding: 6px; }
@@ -28,7 +29,7 @@ table {
 <body>
     <div id="container">
     <div id="intro">
-    <h1>Activité sur les habitudes d'écoute spontanées</h1>
+    <h1>Découverte de vos habitudes de communication spontanées</h1>
     <p>L’exercice poursuit trois (3) objectifs :
         <ul>
             <li>Distinguer les différentes manières de communiquer;</li>
@@ -146,8 +147,12 @@ table {
     // Retrieve selected values
     var numQuestions = 8;
     for (var i = 1; i <= numQuestions; i++) {
-        var questionValue = document.querySelector('input[name="question' + i + '"]:checked').value;
-        types[labels[questionValue]]++;
+        var questionInput = document.querySelector('input[name="question' + i + '"]:checked');
+        var questionValue = questionInput.value;
+        var label = labels[questionValue];
+        if (label) {
+            types[label]++;
+        }
     }
 
 
