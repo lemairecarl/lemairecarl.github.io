@@ -13,7 +13,11 @@ fieldset { border: 6px solid #c3efbf; margin-bottom: 20px }
 
 h1 { font-size: 26px; }
 h2 { font-size: 18px; }
-label { display: block; }
+input[type="radio"] { display: inline-block; }
+input[type="radio"]:checked + label {
+    background-color: lightblue;
+}
+label { display: inline-block; }
 th { text-align: left; padding: 6px; }
 td { padding: 6px; }
 :checked + span { font-weight: bold; }
@@ -49,75 +53,75 @@ table {
     <form id="myForm">
         <fieldset>
             <h2>« Il va falloir que je déménage dans une résidence un jour. Je me suis mise sur la liste d’attente. Quand ils vont m’appeler, il va falloir que je vende ma maison. Mais je ne me vois pas en train de déménager...&nbsp;»</h2>
-            <label for="question1a"><input type="radio" id="question1a" name="question1" value="?"> As-tu pensé à faire des contacts préalables avec un agent d’immeuble?</label><br>
-            <label for="question1b"><input type="radio" id="question1b" name="question1" value="="> Ce n’est pas facile pour toi d’envisager l’idée de quitter un jour ta maison?</label><br>
-            <label for="question1c"><input type="radio" id="question1c" name="question1" value="+"> Quitter la maison à laquelle on est habitué, c’est un peu comme si on mourait. Est-ce que c’est ça le raisonnement que tu fais?</label><br>
-            <label for="question1d"><input type="radio" id="question1d" name="question1" value="%"> Je comprends. Mais ça ne te donne rien de vivre dans le futur. Il faut que tu vives dans le présent sans te tracasser pour rien.</label><br>
-            <label for="question1e"><input type="radio" id="question1e" name="question1" value="*"> Combien de temps ça peut prendre avant qu’un logement se libère à la résidence?</label><br>
-            <label for="question1f"><input type="radio" id="question1f" name="question1" value="&"> Oh! Ne t’en fais pas. Tu verras que quand le temps sera venu, tu seras bien contente de ne plus avoir à t’occuper d’une grande maison.</label><br>
+            <input type="radio" id="question1a" name="question1" value="?"><label for="question1a"> As-tu pensé à faire des contacts préalables avec un agent d’immeuble?</label><br>
+            <input type="radio" id="question1b" name="question1" value="="><label for="question1b"> Ce n’est pas facile pour toi d’envisager l’idée de quitter un jour ta maison?</label><br>
+            <input type="radio" id="question1c" name="question1" value="+"><label for="question1c"> Quitter la maison à laquelle on est habitué, c’est un peu comme si on mourait. Est-ce que c’est ça le raisonnement que tu fais?</label><br>
+            <input type="radio" id="question1d" name="question1" value="%"><label for="question1d"> Je comprends. Mais ça ne te donne rien de vivre dans le futur. Il faut que tu vives dans le présent sans te tracasser pour rien.</label><br>
+            <input type="radio" id="question1e" name="question1" value="*"><label for="question1e"> Combien de temps ça peut prendre avant qu’un logement se libère à la résidence?</label><br>
+            <input type="radio" id="question1f" name="question1" value="&"><label for="question1f"> Oh! Ne t’en fais pas. Tu verras que quand le temps sera venu, tu seras bien contente de ne plus avoir à t’occuper d’une grande maison.</label><br>
         </fieldset>
         <fieldset>
             <h2>« Ma fille qui est divorcée sort avec un homme marié. J’ai toujours fait confiance à son jugement, mais là, je sens qu’il faut que j’intervienne. Je ne peux pas laisser passer ça...&nbsp;»</h2>
-            <label for="question2a"><input type="radio" id="question2a" name="question2" value="+"> Tu dois te dire que les Commandements de Dieu, c’est bon pour tout le monde et que notre fille reste toujours notre fille. C’est pour ça que tu te sens obligée d’intervenir.</label><br>
-            <label for="question2b"><input type="radio" id="question2b" name="question2" value="*"> Est-ce que tu sais comment ça va, dans le ménage de cet homme-là?</label><br>
-            <label for="question2c"><input type="radio" id="question2c" name="question2" value="%"> En effet, il y a des situations comme celle-là où il faut avoir le courage de ses convictions.</label><br>
-            <label for="question2d"><input type="radio" id="question2d" name="question2" value="?"> Penses-tu que tu es la mieux placée pour intervenir, ou est-ce qu’elle a une sœur ou un</label><br>
-            <label for="question2e"><input type="radio" id="question2e" name="question2" value="="> Tu sens qu’il faut intervenir, mais en même temps, tu n’es pas tout à fait décidée.</label><br>
-            <label for="question2f"><input type="radio" id="question2f" name="question2" value="&"> Je trouve ça bon que tu sois venue me parler. J'ai confiance qu’ensemble, on peut trouver une façon de résoudre ton problème.</label><br>
+            <input type="radio" id="question2a" name="question2" value="+"><label for="question2a"> Tu dois te dire que les Commandements de Dieu, c’est bon pour tout le monde et que notre fille reste toujours notre fille. C’est pour ça que tu te sens obligée d’intervenir.</label><br>
+            <input type="radio" id="question2b" name="question2" value="*"><label for="question2b"> Est-ce que tu sais comment ça va, dans le ménage de cet homme-là?</label><br>
+            <input type="radio" id="question2c" name="question2" value="%"><label for="question2c"> En effet, il y a des situations comme celle-là où il faut avoir le courage de ses convictions.</label><br>
+            <input type="radio" id="question2d" name="question2" value="?"><label for="question2d"> Penses-tu que tu es la mieux placée pour intervenir, ou est-ce qu’elle a une sœur ou un</label><br>
+            <input type="radio" id="question2e" name="question2" value="="><label for="question2e"> Tu sens qu’il faut intervenir, mais en même temps, tu n’es pas tout à fait décidée.</label><br>
+            <input type="radio" id="question2f" name="question2" value="&"><label for="question2f"> Je trouve ça bon que tu sois venue me parler. J'ai confiance qu’ensemble, on peut trouver une façon de résoudre ton problème.</label><br>
         </fieldset>
         <fieldset>
             <h2>« Quand je me retrouve dans un grand groupe, c’est pas long que je me sens mal à l’aise. Avec quelques amis, ça va. Je me sens spontané et en confiance. Mais dans un grand groupe, c’est tout le contraire. Qu’est-ce que je peux faire&nbsp;?&nbsp;»</h2>
-            <label for="question3a"><input type="radio" id="question3a" name="question3" value="="> Dans un grand groupe, tu deviens vite inconfortable.</label><br>
-            <label for="question3b"><input type="radio" id="question3b" name="question3" value="?"> As-tu déjà pensé à faire un exercice de détente avant de te retrouver dans cette situation? Par exemple, prendre des grandes respirations et te dire que tout va bien aller?</label><br>
-            <label for="question3c"><input type="radio" id="question3c" name="question3" value="&"> Tu me donnes tous les signes d’un garçon en santé. J’ai l’impression que tu devrais pouvoir te sortir assez facilement de ce problème-là.</label><br>
-            <label for="question3d"><input type="radio" id="question3d" name="question3" value="*"> T’es-tu toujours senti comme ça ou est-ce que c’est récent?</label><br>
-            <label for="question3e"><input type="radio" id="question3e" name="question3" value="%"> Dans le travail que tu te proposes de faire, c’est important d’être à l’aise et efficace en groupe. N’aie pas peur de foncer et de te faire une place.</label><br>
-            <label for="question3f"><input type="radio" id="question3f" name="question3" value="+"> Est-ce que ça se pourrait que ce soit important pour toi d’être toujours bien accepté, ce qui t’amènerait à craindre d’être rejeté par le groupe si tu ne dis pas la bonne chose?</label><br>
+            <input type="radio" id="question3a" name="question3" value="="><label for="question3a"> Dans un grand groupe, tu deviens vite inconfortable.</label><br>
+            <input type="radio" id="question3b" name="question3" value="?"><label for="question3b"> As-tu déjà pensé à faire un exercice de détente avant de te retrouver dans cette situation? Par exemple, prendre des grandes respirations et te dire que tout va bien aller?</label><br>
+            <input type="radio" id="question3c" name="question3" value="&"><label for="question3c"> Tu me donnes tous les signes d’un garçon en santé. J’ai l’impression que tu devrais pouvoir te sortir assez facilement de ce problème-là.</label><br>
+            <input type="radio" id="question3d" name="question3" value="*"><label for="question3d"> T’es-tu toujours senti comme ça ou est-ce que c’est récent?</label><br>
+            <input type="radio" id="question3e" name="question3" value="%"><label for="question3e"> Dans le travail que tu te proposes de faire, c’est important d’être à l’aise et efficace en groupe. N’aie pas peur de foncer et de te faire une place.</label><br>
+            <input type="radio" id="question3f" name="question3" value="+"><label for="question3f"> Est-ce que ça se pourrait que ce soit important pour toi d’être toujours bien accepté, ce qui t’amènerait à craindre d’être rejeté par le groupe si tu ne dis pas la bonne chose?</label><br>
         </fieldset>
         <fieldset>
             <h2>« J’ai une fille de huit ans qui a recommencé à mouiller son lit. Je n’aime pas ça. D’autant plus qu’avec mon nouveau travail, je n’ai pas le temps de laver des draps trois ou quatre fois par semaine…&nbsp;»</h2>
-            <label for="question4a"><input type="radio" id="question4a" name="question4" value="?"> Penses-tu qu’en la réveillant pour l’amener à la toilette dans le milieu de la nuit, ça pourrait l'aider?</label><br>
-            <label for="question4b"><input type="radio" id="question4b" name="question4" value="="> Ce que je comprends, c’est que cela t’occasionne un surplus de travail et te contrarie.</label><br>
-            <label for="question4c"><input type="radio" id="question4c" name="question4" value="*"> Est-ce ta seule fille ou si tu as d’autres enfants à la maison?</label><br>
-            <label for="question4d"><input type="radio" id="question4d" name="question4" value="&"> C’est probablement juste un ajustement passager à ton nouveau travail. Ça devrait se passer d’ici quelque temps. Je ne pense pas qu’il y ait de quoi s’inquiéter.</label><br>
-            <label for="question4e"><input type="radio" id="question4e" name="question4" value="+"> Moi je verrais ça comme une demande d’attention qu’elle te fait, vu que tu es moins présente à cause de ton travail. Est-ce que ça se peut?</label><br>
-            <label for="question4f"><input type="radio" id="question4f" name="question4" value="%"> Ce n’est pas agréable de se retrouver avec un bébé. Il faut lui faire comprendre qu’elle est une grande fille maintenant.</label><br>
+            <input type="radio" id="question4a" name="question4" value="?"><label for="question4a"> Penses-tu qu’en la réveillant pour l’amener à la toilette dans le milieu de la nuit, ça pourrait l'aider?</label><br>
+            <input type="radio" id="question4b" name="question4" value="="><label for="question4b"> Ce que je comprends, c’est que cela t’occasionne un surplus de travail et te contrarie.</label><br>
+            <input type="radio" id="question4c" name="question4" value="*"><label for="question4c"> Est-ce ta seule fille ou si tu as d’autres enfants à la maison?</label><br>
+            <input type="radio" id="question4d" name="question4" value="&"><label for="question4d"> C’est probablement juste un ajustement passager à ton nouveau travail. Ça devrait se passer d’ici quelque temps. Je ne pense pas qu’il y ait de quoi s’inquiéter.</label><br>
+            <input type="radio" id="question4e" name="question4" value="+"><label for="question4e"> Moi je verrais ça comme une demande d’attention qu’elle te fait, vu que tu es moins présente à cause de ton travail. Est-ce que ça se peut?</label><br>
+            <input type="radio" id="question4f" name="question4" value="%"><label for="question4f"> Ce n’est pas agréable de se retrouver avec un bébé. Il faut lui faire comprendre qu’elle est une grande fille maintenant.</label><br>
         </fieldset>
         <fieldset>
             <h2>« Mon gendre est concierge à la polyvalente. L’autre jour, il était fier de m’apporter dix livres de café-filtre qu’il avait sorti de la cuisine des profs. Sur le coup, je n’ai rien dit, mais à chaque fois que je regarde ce café-là dans l’armoire, je me sens un peu croche. Je me demande ce qu’il va m’apporter la prochaine fois…&nbsp;»</h2>
-            <label for="question5a"><input type="radio" id="question5a" name="question5" value="&"> Je comprends. Il y en a qui ont la conscience large! Je gage que ton gendre te trouverait scrupuleux si tu lui exprimais ton malaise.</label><br>
-            <label for="question5b"><input type="radio" id="question5b" name="question5" value="%"> Mais le fait que tu n’as rien dit la première fois, ça l’encourageait à continuer. Tu aurais dû réagir dès le début.</label><br>
-            <label for="question5c"><input type="radio" id="question5c" name="question5" value="="> Quand tu dis que tu te sens  croche de voir ce café-là dans l’armoire, qu’est-ce que tu veux dire au juste?</label><br>
-            <label for="question5d"><input type="radio" id="question5d" name="question5" value="*"> Est-ce que ton gendre fait ça avec beaucoup de monde ou seulement avec toi?</label><br>
-            <label for="question5e"><input type="radio" id="question5e" name="question5" value="+"> C’est comme si ton gendre te forçait à vivre selon ses valeurs, en faisant abstraction des tiennes. C’est probablement pour ça que tu te sens mal.</label><br>
-            <label for="question5f"><input type="radio" id="question5f" name="question5" value="?"> Pourrais-tu trouver une façon de soulager ta conscience, par exemple en donnant un montant équivalent à des gens dans le besoin?</label><br>
+            <input type="radio" id="question5a" name="question5" value="&"><label for="question5a"> Je comprends. Il y en a qui ont la conscience large! Je gage que ton gendre te trouverait scrupuleux si tu lui exprimais ton malaise.</label><br>
+            <input type="radio" id="question5b" name="question5" value="%"><label for="question5b"> Mais le fait que tu n’as rien dit la première fois, ça l’encourageait à continuer. Tu aurais dû réagir dès le début.</label><br>
+            <input type="radio" id="question5c" name="question5" value="="><label for="question5c"> Quand tu dis que tu te sens  croche de voir ce café-là dans l’armoire, qu’est-ce que tu veux dire au juste?</label><br>
+            <input type="radio" id="question5d" name="question5" value="*"><label for="question5d"> Est-ce que ton gendre fait ça avec beaucoup de monde ou seulement avec toi?</label><br>
+            <input type="radio" id="question5e" name="question5" value="+"><label for="question5e"> C’est comme si ton gendre te forçait à vivre selon ses valeurs, en faisant abstraction des tiennes. C’est probablement pour ça que tu te sens mal.</label><br>
+            <input type="radio" id="question5f" name="question5" value="?"><label for="question5f"> Pourrais-tu trouver une façon de soulager ta conscience, par exemple en donnant un montant équivalent à des gens dans le besoin?</label><br>
         </fieldset>
         <fieldset>
             <h2>« J’ai un garçon de 36 ans qui m’a demandé de l’argent pour s’acheter une auto. Ça fait un an que je lui dis de se chercher du travail. Là, son chômage est fini et d’après lui, sans auto il ne peut se trouver du travail…&nbsp;»</h2>
-            <label for="question6a"><input type="radio" id="question6a" name="question6" value="%"> J’espère que tu ne te laisseras pas endormir par ses histoires. S’il veut vraiment travailler, qu’il prenne l’autobus comme tout le monde!</label><br>
-            <label for="question6b"><input type="radio" id="question6b" name="question6" value="="> Qu’est-ce que ça te fait vivre, l’idée de lui passer de l’argent?</label><br>
-            <label for="question6c"><input type="radio" id="question6c" name="question6" value="+"> D’après moi, tu te sens encore responsable de lui. C’est pour ça que sa demande te préoccupe tellement.</label><br>
-            <label for="question6d"><input type="radio" id="question6d" name="question6" value="*"> Est-ce que ton garçon a un métier?</label><br>
-            <label for="question6e"><input type="radio" id="question6e" name="question6" value="?"> Il y aurait peut-être possibilité d’endosser un emprunt pour lui à la banque. Comme ça, ça serait à lui à remettre l’argent.</label><br>
-            <label for="question6f"><input type="radio" id="question6f" name="question6" value="&"> Ce n’est pas facile d’avoir des enfants qui ne vous donnent pas l’impression de se prendre en main.</label><br>
+            <input type="radio" id="question6a" name="question6" value="%"><label for="question6a"> J’espère que tu ne te laisseras pas endormir par ses histoires. S’il veut vraiment travailler, qu’il prenne l’autobus comme tout le monde!</label><br>
+            <input type="radio" id="question6b" name="question6" value="="><label for="question6b"> Qu’est-ce que ça te fait vivre, l’idée de lui passer de l’argent?</label><br>
+            <input type="radio" id="question6c" name="question6" value="+"><label for="question6c"> D’après moi, tu te sens encore responsable de lui. C’est pour ça que sa demande te préoccupe tellement.</label><br>
+            <input type="radio" id="question6d" name="question6" value="*"><label for="question6d"> Est-ce que ton garçon a un métier?</label><br>
+            <input type="radio" id="question6e" name="question6" value="?"><label for="question6e"> Il y aurait peut-être possibilité d’endosser un emprunt pour lui à la banque. Comme ça, ça serait à lui à remettre l’argent.</label><br>
+            <input type="radio" id="question6f" name="question6" value="&"><label for="question6f"> Ce n’est pas facile d’avoir des enfants qui ne vous donnent pas l’impression de se prendre en main.</label><br>
         </fieldset>
         <fieldset>
             <h2>« Ça fait des années que je me demande si je ne devrais pas soustraire de mes impôts au fédéral la part qui va aux armements. Mais je n’aime pas l’idée de faire de la prison à mon âge, parce que c’est bien sûr que même si j’étais poursuivi, je refuserais de payer…&nbsp;»</h2>
-            <label for="question7a"><input type="radio" id="question7a" name="question7" value="%"> Je ne suis pas sûr d’aimer ton idée. Il me semble que les jeunes ont plutôt besoin de voir leurs aînés avoir du respect pour la loi.</label><br>
-            <label for="question7b"><input type="radio" id="question7b" name="question7" value="="> Est-ce l’idée de passer quelque temps derrière les barreaux qui t’empêche de passer à l’action ?</label><br>
-            <label for="question7c"><input type="radio" id="question7c" name="question7" value="&"> Je me retrouve beaucoup dans ton questionnement. Tu sais, tu n’es pas seul à te poser cette question là.</label><br>
-            <label for="question7d"><input type="radio" id="question7d" name="question7" value="+"> Si tu te poses ce genre de question, ça veut dire que tu es rendu pas mal plus loin que la moyenne des gens dans le développement de ton sens moral.</label><br>
-            <label for="question7e"><input type="radio" id="question7e" name="question7" value="?"> Je me demande si ton député fédéral n’aurait pas des suggestions intéressantes à te faire à ce sujet. As-tu pensé à lui en parler?</label><br>
-            <label for="question7f"><input type="radio" id="question7f" name="question7" value="*"> Ça peut représenter quel montant, à peu près?</label><br>
+            <input type="radio" id="question7a" name="question7" value="%"><label for="question7a"> Je ne suis pas sûr d’aimer ton idée. Il me semble que les jeunes ont plutôt besoin de voir leurs aînés avoir du respect pour la loi.</label><br>
+            <input type="radio" id="question7b" name="question7" value="="><label for="question7b"> Est-ce l’idée de passer quelque temps derrière les barreaux qui t’empêche de passer à l’action ?</label><br>
+            <input type="radio" id="question7c" name="question7" value="&"><label for="question7c"> Je me retrouve beaucoup dans ton questionnement. Tu sais, tu n’es pas seul à te poser cette question là.</label><br>
+            <input type="radio" id="question7d" name="question7" value="+"><label for="question7d"> Si tu te poses ce genre de question, ça veut dire que tu es rendu pas mal plus loin que la moyenne des gens dans le développement de ton sens moral.</label><br>
+            <input type="radio" id="question7e" name="question7" value="?"><label for="question7e"> Je me demande si ton député fédéral n’aurait pas des suggestions intéressantes à te faire à ce sujet. As-tu pensé à lui en parler?</label><br>
+            <input type="radio" id="question7f" name="question7" value="*"><label for="question7f"> Ça peut représenter quel montant, à peu près?</label><br>
         </fieldset>
         <fieldset>
             <h2>« On a un garçon de 22 ans qui est décrocheur et qui vit encore chez nous. Il nous emprunte de l’argent de poche deux ou trois fois par semaine, il amène ses amis bouffer à la maison et écouter de la grosse musique à n’importe quelle heure. On se demande combien de temps ça va durer…&nbsp;»</h2>
-            <label for="question8a"><input type="radio" id="question8a" name="question8" value="%"> C’est frappant combien certains jeunes peuvent être profiteurs!</label><br>
-            <label for="question8b"><input type="radio" id="question8b" name="question8" value="="> Comment tu te sens présentement, de me dire tout ça sur lui?</label><br>
-            <label for="question8c"><input type="radio" id="question8c" name="question8" value="&"> Même si c’est ton garçon, ça finit par être pesant à la longue.</label><br>
-            <label for="question8d"><input type="radio" id="question8d" name="question8" value="+"> Je gage que c’est la peur de te sentir coupable qui te fait endurer la situation.</label><br>
-            <label for="question8e"><input type="radio" id="question8e" name="question8" value="*"> Est-ce que ton garçon a déjà manifesté l’idée de s’en aller en appartement?</label><br>
-            <label for="question8f"><input type="radio" id="question8f" name="question8" value="?"> Es-tu au courant qu’il existe des programmes du gouvernement pour les raccrocheurs?</label><br>
+            <input type="radio" id="question8a" name="question8" value="%"><label for="question8a"> C’est frappant combien certains jeunes peuvent être profiteurs!</label><br>
+            <input type="radio" id="question8b" name="question8" value="="><label for="question8b"> Comment tu te sens présentement, de me dire tout ça sur lui?</label><br>
+            <input type="radio" id="question8c" name="question8" value="&"><label for="question8c"> Même si c’est ton garçon, ça finit par être pesant à la longue.</label><br>
+            <input type="radio" id="question8d" name="question8" value="+"><label for="question8d"> Je gage que c’est la peur de te sentir coupable qui te fait endurer la situation.</label><br>
+            <input type="radio" id="question8e" name="question8" value="*"><label for="question8e"> Est-ce que ton garçon a déjà manifesté l’idée de s’en aller en appartement?</label><br>
+            <input type="radio" id="question8f" name="question8" value="?"><label for="question8f"> Es-tu au courant qu’il existe des programmes du gouvernement pour les raccrocheurs?</label><br>
         </fieldset>
 
         <button id="submitButton">Soumettre les réponses</button>
